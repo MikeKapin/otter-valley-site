@@ -1,0 +1,302 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+---
+
+<BaseLayout
+  title="Affiliates & Partners"
+  description="Our affiliate partners — CCFR, NFA, OFAH, and HuntFish Ontario."
+>
+
+  <HeroVideo
+    compact={true}
+    title="Our Affiliates & Partners"
+    tagline="Organizations We Support"
+  />
+
+  <!-- Affiliates Introduction -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">Standing With Like-Minded Organizations</h2>
+      <hr class="gold-divider" />
+      <div class="prose-block">
+        <p>
+          Otter Valley Rod &amp; Gun Club believes that strong community extends beyond the
+          property line. We proudly affiliate with national and provincial organizations that
+          share our commitment to responsible firearms ownership, conservation, and the
+          enduring traditions of hunting, fishing, and outdoor sport.
+        </p>
+        <p>
+          We encourage every member to explore membership with one or more of these organizations.
+          Together, we carry a louder voice for the rights and responsibilities of law-abiding
+          firearms owners and outdoor enthusiasts across Ontario and Canada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Affiliate Cards -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Our Affiliates</h2>
+      <hr class="gold-divider" />
+      <div class="affiliates-grid">
+
+        <!-- CCFR -->
+        <div class="card affiliate-card">
+          <div class="affiliate-logo-wrap">
+            <img
+              src="/images/logos/ccfr.svg"
+              alt="Canadian Coalition for Firearm Rights logo"
+              class="affiliate-logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="affiliate-body">
+            <h3>Canadian Coalition for Firearm Rights</h3>
+            <p class="affiliate-url">firearmrights.ca</p>
+            <hr class="gold-divider-wide" />
+            <p>
+              The Canadian Coalition for Firearm Rights advocates for responsible firearms
+              owners across Canada. Membership includes legal protection, insurance, and a
+              strong voice in Ottawa on the issues that matter most to law-abiding gun owners.
+            </p>
+            <a
+              href="https://www.firearmrights.ca"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+        <!-- NFA -->
+        <div class="card affiliate-card">
+          <div class="affiliate-logo-wrap">
+            <img
+              src="/images/logos/nfa.svg"
+              alt="National Firearms Association logo"
+              class="affiliate-logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="affiliate-body">
+            <h3>NFA Canada</h3>
+            <p class="affiliate-url">nfa.ca</p>
+            <hr class="gold-divider-wide" />
+            <p>
+              Canada's National Firearms Association supports safe firearms activities,
+              self-defense rights, and legislative advocacy. Members receive the Canadian
+              Firearms Journal and access to a network of fellow firearms owners from coast to coast.
+            </p>
+            <a
+              href="https://www.nfa.ca"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+        <!-- OFAH -->
+        <div class="card affiliate-card">
+          <div class="affiliate-logo-wrap">
+            <img
+              src="/images/logos/ofah.svg"
+              alt="Ontario Federation of Anglers and Hunters logo"
+              class="affiliate-logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="affiliate-body">
+            <h3>Ontario Federation of Anglers and Hunters</h3>
+            <p class="affiliate-url">ofah.org</p>
+            <hr class="gold-divider-wide" />
+            <p>
+              The Ontario Federation of Anglers and Hunters is Canada's leading conservation
+              organization, established in 1928. They represent Ontario's anglers, hunters, and
+              outdoor enthusiasts — advancing conservation, fish and wildlife management, and
+              outdoor heritage across the province.
+            </p>
+            <a
+              href="https://www.ofah.org"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+        <!-- HuntFish Ontario -->
+        <div class="card affiliate-card">
+          <div class="affiliate-logo-wrap">
+            <img
+              src="/images/logos/huntfish-ontario.svg"
+              alt="HuntFish Ontario logo"
+              class="affiliate-logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="affiliate-body">
+            <h3>HuntFish Ontario</h3>
+            <p class="affiliate-url">huntandfishontario.com</p>
+            <hr class="gold-divider-wide" />
+            <p>
+              Ontario's official portal for hunting and fishing licences, Outdoors Cards, and
+              regulatory information. Everything you need to get out on the water or into the
+              field — licences, regulations, and species information in one place.
+            </p>
+            <a
+              href="https://www.huntandfishontario.com"
+              class="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Partnership CTA -->
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Interested in Partnering With Us?</h2>
+      <hr class="gold-divider" />
+      <p class="cta-body">
+        If your organization shares our values of responsible outdoor recreation, conservation,
+        and community, we'd love to hear from you.
+      </p>
+      <a href="/contact/" class="btn btn-gold">Contact Us</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .prose-block {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .prose-block p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Affiliates grid — 2 columns on desktop, 1 on mobile */
+  .affiliates-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .affiliates-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Feature card layout */
+  .affiliate-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .affiliate-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Logo area */
+  .affiliate-logo-wrap {
+    background: var(--brown-dark);
+    border-bottom: 2px solid var(--gold-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 2rem;
+    min-height: 140px;
+  }
+
+  .affiliate-logo {
+    max-height: 80px;
+    max-width: 220px;
+    width: auto;
+    object-fit: contain;
+    /* Tint placeholder SVGs to gold if they're just outlines */
+    filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(5deg);
+    opacity: 0.85;
+  }
+
+  /* Body area */
+  .affiliate-body {
+    padding: 1.5rem 1.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .affiliate-body h3 {
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .affiliate-url {
+    font-size: 0.8rem;
+    color: var(--gold-dark);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: var(--font-body);
+  }
+
+  .affiliate-body p:last-of-type {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+    flex: 1;
+  }
+
+  .affiliate-body .btn {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  /* CTA section */
+  .cta-body {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 767px) {
+    .affiliate-logo-wrap {
+      min-height: 110px;
+      padding: 1.75rem 1.5rem;
+    }
+
+    .affiliate-body {
+      padding: 1.25rem 1.5rem 1.75rem;
+    }
+  }
+</style>

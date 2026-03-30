@@ -1,0 +1,191 @@
+[
+  {
+    "id": "g01",
+    "src": "/images/club/trap-field-01.jpg",
+    "alt": "Trap Field 1 looking downrange on a sunny afternoon at Otter Valley",
+    "category": "trap",
+    "date": "2025-07-20"
+  },
+  {
+    "id": "g02",
+    "src": "/images/club/sporting-clays-01.jpg",
+    "alt": "Station 4 on the Otter Valley sporting clays course through the hardwood bush",
+    "category": "trap",
+    "date": "2025-08-10"
+  },
+  {
+    "id": "g03",
+    "src": "/images/club/sporting-clays-02.jpg",
+    "alt": "A shooter calls for the bird at the quartering-away station on the clays course",
+    "category": "trap",
+    "date": "2025-08-10"
+  },
+  {
+    "id": "g04",
+    "src": "/images/club/rifle-range-01.jpg",
+    "alt": "Otter Valley outdoor rifle range showing bench positions and target frames at 100 yards",
+    "category": "rifle",
+    "date": "2025-06-15"
+  },
+  {
+    "id": "g05",
+    "src": "/images/club/rifle-range-02.jpg",
+    "alt": "Bench rest shooting position on the 200-yard rifle range",
+    "category": "rifle",
+    "date": "2025-06-15"
+  },
+  {
+    "id": "g06",
+    "src": "/images/club/rifle-range-03.jpg",
+    "alt": "Steel target frames set up at the 100-yard line on a clear fall day",
+    "category": "rifle",
+    "date": "2025-10-05"
+  },
+  {
+    "id": "g07",
+    "src": "/images/club/rifle-range-04.jpg",
+    "alt": "Prone shooting position on the Otter Valley rifle range",
+    "category": "rifle",
+    "date": "2025-06-28"
+  },
+  {
+    "id": "g08",
+    "src": "/images/club/rifle-range-05.jpg",
+    "alt": "Downrange view of the rifle range from the firing line",
+    "category": "rifle",
+    "date": "2025-07-04"
+  },
+  {
+    "id": "g09",
+    "src": "/images/club/rifle-range-06.jpg",
+    "alt": "New target frames installed during the spring work day",
+    "category": "rifle",
+    "date": "2025-04-27"
+  },
+  {
+    "id": "g10",
+    "src": "/images/club/rifle-range-07.jpg",
+    "alt": "Autumn colours behind the rifle range backstop — October at Otter Valley",
+    "category": "rifle",
+    "date": "2025-10-12"
+  },
+  {
+    "id": "g11",
+    "src": "/images/club/handgun-range-01.jpg",
+    "alt": "Pistol range bay with B-27 targets set at 25 metres",
+    "category": "handgun",
+    "date": "2025-08-17"
+  },
+  {
+    "id": "g12",
+    "src": "/images/club/handgun-range-02.jpg",
+    "alt": "Steel silhouette targets set up for the August handgun match",
+    "category": "handgun",
+    "date": "2025-08-17"
+  },
+  {
+    "id": "g13",
+    "src": "/images/club/archery-range-01.jpg",
+    "alt": "Otter Valley archery range with foam 3D deer target at 20 metres",
+    "category": "archery",
+    "date": "2025-09-07"
+  },
+  {
+    "id": "g14",
+    "src": "/images/club/archery-range-02.jpg",
+    "alt": "Traditional recurve archer drawing at the 30-metre stake during the 3D shoot",
+    "category": "archery",
+    "date": "2025-09-07"
+  },
+  {
+    "id": "g15",
+    "src": "/images/club/archery-range-03.jpg",
+    "alt": "3D bear target along the wooded archery trail in early September",
+    "category": "archery",
+    "date": "2025-09-07"
+  },
+  {
+    "id": "g16",
+    "src": "/images/club/fishing-pond-01.jpg",
+    "alt": "The club fishing pond on a calm summer morning — catch and release",
+    "category": "fishing",
+    "date": "2025-06-22"
+  },
+  {
+    "id": "g17",
+    "src": "/images/club/clubhouse-01.jpg",
+    "alt": "The Otter Valley Rod & Gun Club clubhouse, home of the CAN-AM awards banquet",
+    "category": "facility",
+    "date": "2025-07-19"
+  },
+  {
+    "id": "g18",
+    "src": "/images/club/grounds-02.jpg",
+    "alt": "Club grounds after the spring work day — freshly mown and ready for the season",
+    "category": "facility",
+    "date": "2025-04-27"
+  },
+  {
+    "id": "g19",
+    "src": "/images/club/grounds-aerial-01.jpg",
+    "alt": "Aerial view of the Otter Valley Rod & Gun Club property showing all ranges",
+    "category": "facility",
+    "date": "2025-05-10"
+  },
+  {
+    "id": "g20",
+    "src": "/images/stock/trap-shooting-01.svg",
+    "alt": "Competitive trap shooter calling for the bird at the 16-yard line",
+    "category": "trap",
+    "date": "2025-07-20"
+  },
+  {
+    "id": "g21",
+    "src": "/images/stock/group-shooters-01.svg",
+    "alt": "Members lined up at the trap fields during the 2025 CAN-AM shoot",
+    "category": "event",
+    "date": "2025-07-20"
+  },
+  {
+    "id": "g22",
+    "src": "/images/stock/handgun-shooting-01.svg",
+    "alt": "Competitor engaging steel targets at the annual Handgun Silhouette Match",
+    "category": "handgun",
+    "date": "2025-08-17"
+  },
+  {
+    "id": "g23",
+    "src": "/images/stock/ontario-woodland-01.svg",
+    "alt": "The wooded terrain of the Otter Valley sporting clays course in full leaf",
+    "category": "trap",
+    "date": "2025-08-10"
+  },
+  {
+    "id": "g24",
+    "src": "/images/stock/nature-landscape-01.svg",
+    "alt": "Late afternoon light over the Otter Valley club grounds looking toward the woodlot",
+    "category": "facility",
+    "date": "2025-09-20"
+  },
+  {
+    "id": "g25",
+    "src": "/images/stock/fishing-pond-01.svg",
+    "alt": "Early morning mist rising off the club pond — opening weekend of the fishing season",
+    "category": "fishing",
+    "date": "2025-05-04"
+  },
+  {
+    "id": "g26",
+    "src": "/images/stock/sporting-clays-01.svg",
+    "alt": "Two shooters working through the high-tower station on the sporting clays course",
+    "category": "trap",
+    "date": "2025-08-10"
+  },
+  {
+    "id": "g27",
+    "src": "/images/stock/clubhouse-interior-01.svg",
+    "alt": "Inside the clubhouse during the 2025 Christmas Dinner and awards evening",
+    "category": "event",
+    "date": "2025-12-07"
+  }
+]

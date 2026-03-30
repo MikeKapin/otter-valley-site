@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import ResultsTable from '../components/ResultsTable.astro';
+---
+
+<BaseLayout
+  title="Results & Leaderboards"
+  description="Competition results and leaderboards from Otter Valley Rod & Gun Club."
+>
+
+  <HeroVideo
+    compact
+    title="Results & Leaderboards"
+    tagline="See Where You Stand"
+  />
+
+  <!-- Filter / Jump Nav -->
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Competition Results</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 640px; margin: 0 auto 2.5rem;">
+        Browse official results from the CAN-AM Shoot, weekly Trap League standings,
+        and the annual Club Championship. Use the cards below to jump directly to each section.
+      </p>
+      <div class="jump-nav grid-3">
+        <a href="#can-am" class="card jump-card">
+          <span class="jump-icon">&#127942;</span>
+          <h3>CAN-AM Results</h3>
+          <p>Annual international trap & skeet competition results.</p>
+        </a>
+        <a href="#trap-league" class="card jump-card">
+          <span class="jump-icon">&#127919;</span>
+          <h3>Trap League Standings</h3>
+          <p>Weekly league averages and running standings.</p>
+        </a>
+        <a href="#championships" class="card jump-card">
+          <span class="jump-icon">&#127894;</span>
+          <h3>Club Championships</h3>
+          <p>Annual club champion history across all disciplines.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAN-AM Results -->
+  <section class="section" id="can-am">
+    <div class="container">
+      <h2 class="text-center">CAN-AM Results</h2>
+      <hr class="gold-divider" />
+      <p class="section-desc text-center">
+        Official results from the Otter Valley CAN-AM Shoot — one of Elgin County's premier
+        trap and skeet competitions, drawing competitors from across Canada and the United States.
+        Visit the <a href="/can-am">CAN-AM page</a> for event details and registration.
+      </p>
+      <ResultsTable dataFile="/data/results/can-am-2025.json" />
+    </div>
+  </section>
+
+  <!-- Trap League -->
+  <section class="section section-dark" id="trap-league">
+    <div class="container">
+      <h2 class="text-center">Trap League Standings</h2>
+      <hr class="gold-divider" />
+      <p class="section-desc text-center">
+        Current season standings for the Otter Valley Wednesday Night Trap League.
+        Averages are updated after each weekly shoot. Contact the club to register for next season.
+      </p>
+      <ResultsTable dataFile="/data/results/trap-league.json" />
+    </div>
+  </section>
+
+  <!-- Club Championships -->
+  <section class="section" id="championships">
+    <div class="container">
+      <h2 class="text-center">Club Championships</h2>
+      <hr class="gold-divider" />
+      <p class="section-desc text-center">
+        Annual champions across trap, sporting clays, rifle, handgun, and archery disciplines.
+        Champions are recognized at the club's year-end banquet each December.
+      </p>
+      <ResultsTable dataFile="/data/results/championships.json" />
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .jump-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .jump-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+    color: inherit;
+  }
+
+  .jump-card h3 {
+    font-size: 1.15rem;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .jump-card p {
+    font-size: 0.875rem;
+    color: var(--cream);
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  .jump-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .section-desc {
+    max-width: 680px;
+    margin: 0 auto 2rem;
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+</style>

@@ -1,0 +1,385 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import newsletters from '../data/newsletters.json';
+
+// Format date badge: "March 2026"
+function formatDate(iso: string): string {
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('en-CA', { month: 'long', year: 'numeric' });
+}
+
+// Short month + day badge
+function badgeMonth(iso: string): string {
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short' });
+}
+function badgeDay(iso: string): string {
+  return String(new Date(iso + 'T12:00:00').getDate());
+}
+---
+
+<BaseLayout
+  title="News & Newsletter"
+  description="News and newsletter archive from the Otter Valley Rod & Gun Club."
+>
+
+  <HeroVideo
+    compact
+    title="News & Newsletter"
+    tagline="Stay in the Loop"
+  />
+
+  <!-- Newsletter Signup -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="signup-wrap">
+        <div class="signup-text">
+          <h2>Stay Connected</h2>
+          <hr class="gold-divider" />
+          <p>
+            Get club updates, event announcements, and range status delivered to your inbox.
+            We send a monthly newsletter and occasional urgent notices — no spam, unsubscribe anytime.
+          </p>
+        </div>
+        <div class="signup-form-wrap">
+          <form
+            name="newsletter-page"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="newsletter-form"
+          >
+            <input type="hidden" name="form-name" value="newsletter-page" />
+            <p class="hidden-field">
+              <label>Do not fill this out: <input name="bot-field" /></label>
+            </p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nl-name">Your Name</label>
+                <input
+                  type="text"
+                  id="nl-name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="nl-email">Email Address</label>
+                <input
+                  type="email"
+                  id="nl-email"
+                  name="email"
+                  placeholder="jane@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-gold">Subscribe to Newsletter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Archive -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Newsletter Archive</h2>
+      <hr class="gold-divider" />
+      <p class="section-intro text-center">
+        Past issues of the Otter Valley Rod &amp; Gun Club newsletter.
+        Click any issue to view the full edition.
+      </p>
+      <div class="newsletter-list">
+        {newsletters.map((nl) => (
+          <div class="nl-card">
+            <div class="nl-date-badge">
+              <span class="nl-month">{badgeMonth(nl.date)}</span>
+              <span class="nl-day">{badgeDay(nl.date)}</span>
+            </div>
+            <div class="nl-body">
+              <span class="nl-tag">Newsletter</span>
+              <h3 class="nl-title">{nl.title}</h3>
+              <p class="nl-summary">{nl.summary}</p>
+            </div>
+            <div class="nl-action">
+              {nl.url && nl.url !== '#'
+                ? <a href={nl.url} class="btn btn-gold" target="_blank" rel="noopener">View</a>
+                : <span class="btn btn-gold disabled" aria-disabled="true">Coming Soon</span>
+              }
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Facebook Feed -->
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Follow Us on Facebook</h2>
+      <hr class="gold-divider" />
+      <p class="section-intro" style="max-width: 600px; margin: 0 auto 2rem;">
+        The quickest way to stay up to date. Range closures, last-minute event changes,
+        and member announcements are posted to Facebook first.
+      </p>
+      <div class="fb-embed-wrap">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOtterValleyRodandGunClub%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="500"
+          height="600"
+          style="border: none; overflow: hidden; max-width: 100%;"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          title="Otter Valley Rod and Gun Club Facebook Page"
+          loading="lazy"
+        ></iframe>
+        <noscript>
+          <p>
+            <a
+              href="https://www.facebook.com/OtterValleyRodandGunClub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-gold"
+            >
+              Visit Us on Facebook
+            </a>
+          </p>
+        </noscript>
+      </div>
+      <p class="fb-fallback">
+        If the feed doesn't load,
+        <a
+          href="https://www.facebook.com/OtterValleyRodandGunClub/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          visit our Facebook page directly
+        </a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog placeholder -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>More From the Club</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 620px; margin: 0 auto 1.5rem; opacity: 0.8;">
+        More updates, event recaps, and range reports coming soon.
+        Follow us on Facebook for the latest news from Otter Valley.
+      </p>
+      <a
+        href="https://www.facebook.com/OtterValleyRodandGunClub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-gold"
+      >
+        Follow on Facebook
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── Signup section ────────────────────────────── */
+  .signup-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .signup-wrap {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .signup-text p {
+    margin-top: 1rem;
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  @media (max-width: 540px) {
+    .form-row { grid-template-columns: 1fr; }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .form-group input {
+    padding: 0.6rem 0.85rem;
+    background: var(--brown-dark);
+    border: 1px solid var(--brown-light);
+    border-radius: 4px;
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--gold-dark);
+  }
+
+  .form-group input::placeholder {
+    color: var(--cream);
+    opacity: 0.35;
+  }
+
+  .hidden-field {
+    display: none;
+  }
+
+  /* ── Newsletter archive ────────────────────────── */
+  .section-intro {
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .newsletter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .nl-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: var(--brown-base);
+    border: 1px solid var(--brown-light);
+    border-radius: 6px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .nl-card:hover {
+    transform: translateX(4px);
+    border-color: var(--gold-dark);
+  }
+
+  .nl-date-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 56px;
+    padding: 0.5rem 0.4rem;
+    background: var(--brown-dark);
+    border: 1px solid var(--gold-dark);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .nl-month {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+
+  .nl-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+  }
+
+  .nl-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .nl-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    background: var(--gold-dark);
+    color: var(--brown-darkest);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .nl-title {
+    font-family: var(--font-heading);
+    color: var(--cream);
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .nl-summary {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .nl-action {
+    flex-shrink: 0;
+  }
+
+  .btn.disabled {
+    opacity: 0.45;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  @media (max-width: 540px) {
+    .nl-card     { flex-direction: column; align-items: flex-start; }
+    .nl-action   { width: 100%; }
+    .nl-action .btn { width: 100%; text-align: center; display: block; }
+  }
+
+  /* ── Facebook embed ────────────────────────────── */
+  .fb-embed-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .fb-fallback {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+  }
+</style>

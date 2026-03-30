@@ -1,0 +1,235 @@
+---
+// Gallery component — filter bar + image grid built by gallery.js
+// Lightbox handled entirely client-side; no server data needed here.
+---
+
+<section class="gallery-section">
+  <div id="gallery-filter-bar" class="gallery-filter-bar container">
+    <!-- Filter buttons injected by gallery.js -->
+  </div>
+  <div id="gallery-grid" class="gallery-grid container" data-src="/data/gallery.json">
+    <!-- Image tiles injected by gallery.js -->
+    <p class="gallery-loading">Loading gallery&hellip;</p>
+  </div>
+</section>
+
+<!-- Lightbox shell — gallery.js populates content -->
+<div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+  <div class="lightbox-overlay"></div>
+  <div class="lightbox-frame">
+    <button class="lb-close" aria-label="Close lightbox" type="button"></button>
+    <button class="lb-prev"  aria-label="Previous image"  type="button">&#8249;</button>
+    <button class="lb-next"  aria-label="Next image"      type="button">&#8250;</button>
+    <figure class="lb-figure">
+      <img id="lb-img" src="" alt="" loading="lazy" />
+      <figcaption id="lb-caption" class="lb-caption"></figcaption>
+    </figure>
+  </div>
+</div>
+
+<script src="/scripts/gallery.js" defer></script>
+
+<style is:global>
+  /* ── Filter bar ────────────────────────────────── */
+  .gallery-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .gallery-filter-btn {
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--brown-light);
+    border-radius: 3px;
+    background: var(--brown-dark);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .gallery-filter-btn:hover,
+  .gallery-filter-btn.active {
+    background: var(--gold-dark);
+    border-color: var(--gold);
+    color: var(--brown-darkest);
+  }
+
+  /* ── Grid ──────────────────────────────────────── */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .gallery-tile {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--brown-base);
+    border: 1px solid var(--brown-light);
+  }
+
+  .gallery-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .gallery-tile:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.6);
+  }
+
+  .gallery-tile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.6rem 0.75rem;
+    background: linear-gradient(transparent, rgba(27, 14, 0, 0.85));
+    color: var(--cream);
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    line-height: 1.4;
+  }
+
+  .gallery-tile:hover .gallery-tile-overlay {
+    opacity: 1;
+  }
+
+  .gallery-loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--cream);
+    opacity: 0.5;
+  }
+
+  /* ── Lightbox ──────────────────────────────────── */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox[hidden] {
+    display: none;
+  }
+
+  .lightbox-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 5, 0, 0.92);
+  }
+
+  .lightbox-frame {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 92vw;
+    max-height: 90vh;
+  }
+
+  .lb-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  #lb-img {
+    max-width: 80vw;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid var(--gold-dark);
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+  }
+
+  .lb-caption {
+    margin-top: 0.75rem;
+    color: var(--cream);
+    font-size: 0.875rem;
+    opacity: 0.8;
+    max-width: 640px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .lb-close,
+  .lb-prev,
+  .lb-next {
+    position: absolute;
+    background: rgba(27, 14, 0, 0.75);
+    border: 1px solid var(--gold-dark);
+    color: var(--gold);
+    font-size: 1.75rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lb-close:hover,
+  .lb-prev:hover,
+  .lb-next:hover {
+    background: var(--gold-dark);
+    color: var(--brown-darkest);
+  }
+
+  .lb-close {
+    top: -2.5rem;
+    right: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .lb-close::before {
+    content: '\00D7';
+  }
+
+  .lb-prev {
+    left: -3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.75rem;
+    height: 3.5rem;
+  }
+
+  .lb-next {
+    right: -3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.75rem;
+    height: 3.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .lb-prev { left: -2.25rem; }
+    .lb-next { right: -2.25rem; }
+    #lb-img  { max-width: 92vw; }
+  }
+</style>
