@@ -1,17 +1,115 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import DisciplineCard from '../components/DisciplineCard.astro';
+import EventPreview from '../components/EventPreview.astro';
+import WeatherWidget from '../components/WeatherWidget.astro';
+import RangeStatus from '../components/RangeStatus.astro';
+import AffiliateBar from '../components/AffiliateBar.astro';
 
+import disciplines from '../data/disciplines.json';
+import events from '../data/events.json';
+
+const now = new Date('2026-03-30');
+const upcoming = events
+  .filter((e) => new Date(e.date) >= now)
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+  .slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home" description="Otter Valley Rod & Gun Club — 50 acres of trap, sporting clays, rifle, handgun, archery, and fishing in Straffordville, Ontario.">
+
+  <HeroVideo
+    title="Otter Valley Rod & Gun Club"
+    tagline="50 Acres of Tradition. Straffordville, Ontario."
+    backgroundImage="/images/club/grounds-aerial-01.jpg"
+  />
+
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Welcome to Otter Valley</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 700px; margin: 0 auto 1rem;">
+        Nestled on 50 acres of wooded land near Straffordville, Ontario, the Otter Valley Rod & Gun Club has been a home for shooting sports enthusiasts for generations. With four trap fields, a 10-station sporting clays course, a 200-yard rifle range, pistol range, archery range with 3D targets, and a stocked fishing pond — there's something here for everyone.
+      </p>
+      <p style="max-width: 700px; margin: 0 auto;">
+        Whether you're a competitive shooter, a weekend angler, or a family looking for a safe introduction to the outdoors, Otter Valley welcomes you.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Our Disciplines</h2>
+      <hr class="gold-divider" />
+      <div class="disciplines-grid">
+        {disciplines.map((d) => (
+          <DisciplineCard name={d.name} slug={d.slug} tagline={d.tagline} image={d.image} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid-2">
+        <WeatherWidget />
+        <RangeStatus />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Upcoming Events</h2>
+      <hr class="gold-divider" />
+      <div class="events-list">
+        {upcoming.map((e) => (
+          <EventPreview title={e.title} date={e.date} category={e.category} description={e.description} />
+        ))}
+      </div>
+      <div class="text-center mt-4">
+        <a href="/events/" class="btn btn-gold">View Full Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Join the Club</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+        Become a member of one of Ontario's premier shooting sports clubs. Individual, family, junior, and senior memberships available.
+      </p>
+      <a href="/membership/" class="btn btn-gold">Learn About Membership</a>
+    </div>
+  </section>
+
+  <AffiliateBar />
+
+</BaseLayout>
+
+<style>
+  .disciplines-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .disciplines-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 1024px) {
+    .disciplines-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+  }
+</style>

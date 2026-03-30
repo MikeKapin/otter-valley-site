@@ -1,0 +1,85 @@
+---
+---
+
+<div class="weather-widget" id="weather-widget">
+  <h4 class="weather-title">Local Conditions</h4>
+  <div class="weather-location">Straffordville, ON</div>
+  <div class="weather-loading" id="weather-loading">Checking conditions...</div>
+  <div class="weather-data" id="weather-data" style="display: none;">
+    <div class="weather-temp" id="weather-temp"></div>
+    <div class="weather-desc" id="weather-desc"></div>
+    <div class="weather-details">
+      <span id="weather-wind"></span>
+      <span id="weather-humidity"></span>
+    </div>
+  </div>
+  <div class="weather-fallback" id="weather-fallback" style="display: none;">
+    <p>Check local conditions before heading out.</p>
+    <p class="weather-coords">42.62&deg;N, 80.60&deg;W</p>
+  </div>
+</div>
+
+<script src="/scripts/weather.js" defer></script>
+
+<style>
+  .weather-widget {
+    background: var(--brown-base);
+    border: 1px solid var(--gold-dark);
+    border-radius: 6px;
+    padding: 1.5rem;
+  }
+
+  .weather-title {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .weather-location {
+    font-size: 0.8rem;
+    color: var(--cream);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .weather-loading {
+    color: var(--cream);
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
+
+  .weather-temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .weather-desc {
+    font-size: 1rem;
+    color: var(--gold-light);
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+  }
+
+  .weather-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--cream);
+    opacity: 0.8;
+  }
+
+  .weather-fallback p {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .weather-coords {
+    font-family: var(--font-mono);
+    font-size: 0.8rem !important;
+    opacity: 0.6;
+  }
+</style>

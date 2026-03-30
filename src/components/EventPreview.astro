@@ -1,0 +1,105 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+}
+
+const { title, date, category, description } = Astro.props;
+
+const d = new Date(date + 'T12:00:00');
+const month = d.toLocaleDateString('en-US', { month: 'short' });
+const day = d.getDate();
+
+const categoryColors: Record<string, string> = {
+  competition: '#c9a84c',
+  league: '#6d9dc5',
+  social: '#7cb342',
+  maintenance: '#ff8a65',
+  meeting: '#ab47bc',
+};
+
+const color = categoryColors[category] || '#c9a84c';
+---
+
+<div class="event-card">
+  <div class="event-date">
+    <span class="event-month">{month}</span>
+    <span class="event-day">{day}</span>
+  </div>
+  <div class="event-info">
+    <span class="event-category" style={`background: ${color};`}>{category}</span>
+    <h4 class="event-title">{title}</h4>
+    <p class="event-desc">{description}</p>
+  </div>
+</div>
+
+<style>
+  .event-card {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: var(--brown-base);
+    border: 1px solid var(--brown-light);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+  }
+
+  .event-card:hover {
+    transform: translateX(4px);
+  }
+
+  .event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding: 0.5rem;
+    background: var(--brown-dark);
+    border: 1px solid var(--gold-dark);
+    border-radius: 4px;
+  }
+
+  .event-month {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .event-day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cream);
+    line-height: 1;
+  }
+
+  .event-category {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    color: var(--brown-darkest);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .event-title {
+    font-family: var(--font-heading);
+    color: var(--cream);
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .event-desc {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin: 0;
+    line-height: 1.5;
+  }
+</style>

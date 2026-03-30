@@ -345,6 +345,40 @@ tr:hover {
 .status-dot.closed { background: var(--red-cta); }
 .status-dot.reserved { background: var(--yellow); }
 
+.range-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(93, 64, 55, 0.3);
+}
+
+.range-name {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.range-badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.range-badge.open { background: rgba(46, 125, 50, 0.2); color: var(--green); }
+.range-badge.closed { background: rgba(139, 0, 0, 0.2); color: var(--red-cta); }
+.range-badge.reserved { background: rgba(249, 168, 37, 0.2); color: var(--yellow); }
+
+.range-note {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  display: block;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
 /* ── Page Hero (non-video) ────────────────────── */
 
 .page-hero {

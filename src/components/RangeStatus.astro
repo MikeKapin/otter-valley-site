@@ -1,0 +1,47 @@
+---
+---
+
+<div class="range-status" id="range-status">
+  <h4 class="range-title">Range Status</h4>
+  <div class="range-list" id="range-list">
+    <p class="range-loading">Loading status...</p>
+  </div>
+  <div class="range-updated" id="range-updated"></div>
+</div>
+
+<script src="/scripts/range-status.js" defer></script>
+
+<style>
+  .range-status {
+    background: var(--brown-base);
+    border: 1px solid var(--gold-dark);
+    border-radius: 6px;
+    padding: 1.5rem;
+  }
+
+  .range-title {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .range-loading {
+    color: var(--cream);
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
+
+  .range-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .range-updated {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    color: var(--cream);
+    opacity: 0.5;
+  }
+</style>
