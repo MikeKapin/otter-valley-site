@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d2600;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <!-- Subtle dot pattern -->
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#c9a84c" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#dots)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Top / bottom border lines -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Crosshair icon — centered at 400,250 -->
+  <!-- Outer circle -->
+  <circle cx="400" cy="250" r="90" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.9"/>
+  <!-- Middle circle -->
+  <circle cx="400" cy="250" r="55" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+  <!-- Inner circle -->
+  <circle cx="400" cy="250" r="20" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.9"/>
+  <!-- Center dot -->
+  <circle cx="400" cy="250" r="5" fill="#c9a84c" opacity="0.9"/>
+  <!-- Crosshair lines -->
+  <line x1="295" y1="250" x2="355" y2="250" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <line x1="445" y1="250" x2="505" y2="250" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <line x1="400" y1="145" x2="400" y2="205" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <line x1="400" y1="295" x2="400" y2="355" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <!-- Diagonal tick marks on outer circle -->
+  <line x1="336" y1="186" x2="350" y2="200" stroke="#c9a84c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="464" y1="186" x2="450" y2="200" stroke="#c9a84c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="336" y1="314" x2="350" y2="300" stroke="#c9a84c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="464" y1="314" x2="450" y2="300" stroke="#c9a84c" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Clay target arcs above (flying clay) -->
+  <path d="M310,190 Q340,170 370,185" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M430,182 Q460,162 490,177" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.4"/>
+
+  <!-- Divider line -->
+  <line x1="200" y1="390" x2="600" y2="390" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+
+  <!-- Main label -->
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="url(#gold)" letter-spacing="3">TRAP SHOOTING</text>
+
+  <!-- Sub label -->
+  <text x="400" y="465" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <!-- Small decorative dots flanking main label -->
+  <circle cx="195" cy="430" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="605" cy="430" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <!-- Placeholder tag -->
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

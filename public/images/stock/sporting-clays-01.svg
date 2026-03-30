@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2d00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="38%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60,0 L0,0 0,60" fill="none" stroke="#c9a84c" stroke-width="0.3" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Ground line -->
+  <line x1="100" y1="360" x2="700" y2="360" stroke="#c9a84c" stroke-width="1" opacity="0.25"/>
+
+  <!-- Left tree -->
+  <rect x="238" y="300" width="14" height="70" fill="#c9a84c" opacity="0.5"/>
+  <!-- Left canopy layers -->
+  <polygon points="245,180 200,300 290,300" fill="#c9a84c" opacity="0.6"/>
+  <polygon points="245,215 208,310 282,310" fill="#c9a84c" opacity="0.4"/>
+  <polygon points="245,245 212,320 278,320" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Right tree (taller) -->
+  <rect x="548" y="280" width="16" height="90" fill="#c9a84c" opacity="0.5"/>
+  <!-- Right canopy layers -->
+  <polygon points="556,155 508,280 604,280" fill="#c9a84c" opacity="0.6"/>
+  <polygon points="556,195 516,295 596,295" fill="#c9a84c" opacity="0.4"/>
+  <polygon points="556,228" fill="#c9a84c" opacity="0.25"/>
+  <polygon points="556,228 520,305 592,305" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Center small tree -->
+  <rect x="393" y="310" width="10" height="60" fill="#c9a84c" opacity="0.4"/>
+  <polygon points="398,215 365,315 431,315" fill="#c9a84c" opacity="0.5"/>
+  <polygon points="398,248 368,320 428,320" fill="#c9a84c" opacity="0.3"/>
+
+  <!-- Flying clay target arcs -->
+  <path d="M170,200 Q220,155 275,175" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.6"/>
+  <circle cx="170" cy="200" r="7" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.6"/>
+  <path d="M590,160 Q640,140 680,165" stroke="#c9a84c" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <circle cx="680" cy="165" r="6" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+
+  <!-- Divider -->
+  <line x1="180" y1="400" x2="620" y2="400" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="442" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="bold" fill="url(#gold)" letter-spacing="2">SPORTING CLAYS COURSE</text>
+  <text x="400" y="477" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="170" cy="442" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="630" cy="442" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

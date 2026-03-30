@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0800;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1200;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sky" cx="50%" cy="25%" r="40%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Horizon glow -->
+  <ellipse cx="400" cy="310" rx="250" ry="30" fill="#c9a84c" opacity="0.04"/>
+
+  <!-- Ground -->
+  <rect x="60" y="355" width="680" height="15" rx="4" fill="#c9a84c" opacity="0.12"/>
+  <line x1="60" y1="362" x2="740" y2="362" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+
+  <!-- Far background trees (small, faded) -->
+  <rect x="148" y="295" width="8" height="70" fill="#c9a84c" opacity="0.2"/>
+  <polygon points="152,240 128,298 176,298" fill="#c9a84c" opacity="0.2"/>
+
+  <rect x="628" y="285" width="8" height="80" fill="#c9a84c" opacity="0.2"/>
+  <polygon points="632,225 608,290 656,290" fill="#c9a84c" opacity="0.2"/>
+
+  <rect x="310" y="290" width="7" height="75" fill="#c9a84c" opacity="0.18"/>
+  <polygon points="313,238 293,294 333,294" fill="#c9a84c" opacity="0.18"/>
+
+  <rect x="485" y="288" width="7" height="77" fill="#c9a84c" opacity="0.18"/>
+  <polygon points="488,235 468,292 508,292" fill="#c9a84c" opacity="0.18"/>
+
+  <!-- Mid-ground pine trees -->
+  <!-- Left pine -->
+  <rect x="218" y="265" width="12" height="100" fill="#c9a84c" opacity="0.45"/>
+  <polygon points="224,155 188,270 260,270" fill="#c9a84c" opacity="0.55"/>
+  <polygon points="224,190 192,278 256,278" fill="#c9a84c" opacity="0.38"/>
+  <polygon points="224,220 196,285 252,285" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Center pine (tallest) -->
+  <rect x="394" y="240" width="14" height="125" fill="#c9a84c" opacity="0.5"/>
+  <polygon points="401,120 356,248 446,248" fill="#c9a84c" opacity="0.65"/>
+  <polygon points="401,162 360,255 442,255" fill="#c9a84c" opacity="0.45"/>
+  <polygon points="401,198 364,262 438,262" fill="#c9a84c" opacity="0.3"/>
+
+  <!-- Right pine -->
+  <rect x="558" y="255" width="12" height="110" fill="#c9a84c" opacity="0.45"/>
+  <polygon points="564,148 528,262 600,262" fill="#c9a84c" opacity="0.55"/>
+  <polygon points="564,185 532,268 596,268" fill="#c9a84c" opacity="0.38"/>
+  <polygon points="564,215 536,275 592,275" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Moon / sun hint -->
+  <circle cx="400" cy="165" r="22" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="400" cy="165" r="14" fill="#c9a84c" opacity="0.08"/>
+
+  <!-- Stars -->
+  <circle cx="280" cy="130" r="1.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="520" cy="115" r="1.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="340" cy="100" r="1" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="460" cy="108" r="1" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="600" cy="135" r="1.5" fill="#c9a84c" opacity="0.35"/>
+  <circle cx="200" cy="155" r="1" fill="#c9a84c" opacity="0.3"/>
+
+  <!-- Divider -->
+  <line x1="180" y1="408" x2="620" y2="408" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="url(#gold)" letter-spacing="3">ONTARIO WOODLAND</text>
+  <text x="400" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="160" cy="450" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="640" cy="450" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

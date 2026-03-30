@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#2e3b2e"/>
+  <text x="100" y="32" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#c9a84c">HuntFish</text>
+  <text x="100" y="50" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#c9a84c">Ontario</text>
+  <text x="100" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#f5e6c8">huntandfishontario.com</text>
+</svg>

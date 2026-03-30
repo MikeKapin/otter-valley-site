@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="44%" r="35%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.14" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <pattern id="lines" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="30" x2="30" y2="0" stroke="#c9a84c" stroke-width="0.4" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#lines)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Target — bullseye, centered at 400,245 -->
+  <!-- Ring 5 -->
+  <circle cx="400" cy="245" r="110" fill="none" stroke="#c9a84c" stroke-width="1.2" opacity="0.3"/>
+  <!-- Ring 4 -->
+  <circle cx="400" cy="245" r="85" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+  <!-- Ring 3 -->
+  <circle cx="400" cy="245" r="62" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.5"/>
+  <!-- Ring 2 -->
+  <circle cx="400" cy="245" r="40" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.65"/>
+  <!-- Ring 1 (bullseye) -->
+  <circle cx="400" cy="245" r="20" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.9"/>
+  <!-- Center X -->
+  <circle cx="400" cy="245" r="6" fill="#c9a84c" opacity="0.85"/>
+
+  <!-- Crosshair lines (short, outside bullseye) -->
+  <line x1="370" y1="245" x2="380" y2="245" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+  <line x1="420" y1="245" x2="430" y2="245" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+  <line x1="400" y1="215" x2="400" y2="225" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+  <line x1="400" y1="265" x2="400" y2="275" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Bullet hole markers (off-center, scattered) -->
+  <circle cx="388" cy="235" r="3" fill="#c9a84c" opacity="0.45"/>
+  <circle cx="408" cy="252" r="2.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="394" cy="258" r="2.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="415" cy="238" r="2" fill="#c9a84c" opacity="0.3"/>
+
+  <!-- Score numbers on rings -->
+  <text x="400" y="143" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.4">6</text>
+  <text x="400" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.45">7</text>
+  <text x="400" y="191" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5">8</text>
+  <text x="400" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.6">9</text>
+  <text x="400" y="234" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c9a84c" opacity="0.8">10</text>
+
+  <!-- Divider -->
+  <line x1="180" y1="400" x2="620" y2="400" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="442" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="url(#gold)" letter-spacing="3">TARGET SHOOTING</text>
+  <text x="400" y="477" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="155" cy="442" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="645" cy="442" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

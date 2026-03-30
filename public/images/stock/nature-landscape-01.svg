@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0800;stop-opacity:1" />
+      <stop offset="35%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sunrise" cx="50%" cy="52%" r="28%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.18" />
+      <stop offset="60%" style="stop-color:#c9a84c;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <rect width="800" height="600" fill="url(#sunrise)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Sun / dawn light rays -->
+  <circle cx="400" cy="290" r="28" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="400" cy="290" r="18" fill="#c9a84c" opacity="0.12"/>
+  <!-- Sun rays -->
+  <line x1="400" y1="250" x2="400" y2="238" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+  <line x1="400" y1="330" x2="400" y2="342" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+  <line x1="360" y1="290" x2="348" y2="290" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+  <line x1="440" y1="290" x2="452" y2="290" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+  <line x1="372" y1="262" x2="364" y2="254" stroke="#c9a84c" stroke-width="1.2" opacity="0.25"/>
+  <line x1="428" y1="262" x2="436" y2="254" stroke="#c9a84c" stroke-width="1.2" opacity="0.25"/>
+  <line x1="372" y1="318" x2="364" y2="326" stroke="#c9a84c" stroke-width="1.2" opacity="0.25"/>
+  <line x1="428" y1="318" x2="436" y2="326" stroke="#c9a84c" stroke-width="1.2" opacity="0.25"/>
+
+  <!-- Horizon / hills -->
+  <path d="M60,310 Q200,265 350,300 Q420,315 500,280 Q600,250 740,295 L740,370 L60,370 Z" fill="#c9a84c" opacity="0.08"/>
+  <path d="M60,330 Q200,295 350,320 Q420,332 500,305 Q600,275 740,315 L740,370 L60,370 Z" fill="#c9a84c" opacity="0.06"/>
+
+  <!-- Foreground ground -->
+  <rect x="60" y="360" width="680" height="18" rx="5" fill="#c9a84c" opacity="0.14"/>
+  <line x1="60" y1="369" x2="740" y2="369" stroke="#c9a84c" stroke-width="1.2" opacity="0.3"/>
+
+  <!-- Far trees (silhouette row) -->
+  <rect x="130" y="290" width="8" height="82" fill="#c9a84c" opacity="0.22"/>
+  <polygon points="134,240 115,294 153,294" fill="#c9a84c" opacity="0.25"/>
+  <polygon points="134,262 118,298 150,298" fill="#c9a84c" opacity="0.18"/>
+
+  <rect x="220" y="278" width="8" height="94" fill="#c9a84c" opacity="0.22"/>
+  <polygon points="224,228 205,282 243,282" fill="#c9a84c" opacity="0.25"/>
+  <polygon points="224,252 207,286 241,286" fill="#c9a84c" opacity="0.18"/>
+
+  <rect x="560" y="282" width="8" height="90" fill="#c9a84c" opacity="0.22"/>
+  <polygon points="564,230 545,286 583,286" fill="#c9a84c" opacity="0.25"/>
+  <polygon points="564,254 547,290 581,290" fill="#c9a84c" opacity="0.18"/>
+
+  <rect x="648" y="275" width="8" height="97" fill="#c9a84c" opacity="0.22"/>
+  <polygon points="652,222 633,279 671,279" fill="#c9a84c" opacity="0.25"/>
+  <polygon points="652,248 635,283 669,283" fill="#c9a84c" opacity="0.18"/>
+
+  <!-- Left foreground pine -->
+  <rect x="168" y="248" width="12" height="125" fill="#c9a84c" opacity="0.48"/>
+  <polygon points="174,148 142,255 206,255" fill="#c9a84c" opacity="0.6"/>
+  <polygon points="174,185 145,260 203,260" fill="#c9a84c" opacity="0.4"/>
+  <polygon points="174,215 148,265 200,265" fill="#c9a84c" opacity="0.28"/>
+
+  <!-- Right foreground pine -->
+  <rect x="620" y="245" width="12" height="128" fill="#c9a84c" opacity="0.48"/>
+  <polygon points="626,145 594,252 658,252" fill="#c9a84c" opacity="0.6"/>
+  <polygon points="626,182 597,257 655,257" fill="#c9a84c" opacity="0.4"/>
+  <polygon points="626,212 600,262 652,262" fill="#c9a84c" opacity="0.28"/>
+
+  <!-- Stars in upper sky -->
+  <circle cx="300" cy="115" r="1.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="500" cy="100" r="1.5" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="180" cy="140" r="1" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="620" cy="130" r="1" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="350" cy="90" r="1" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="450" cy="120" r="1.5" fill="#c9a84c" opacity="0.35"/>
+
+  <!-- Foreground grass tufts -->
+  <path d="M120,368 Q125,355 130,368" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M200,366 Q205,350 210,366" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M580,366 Q585,350 590,366" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M660,368 Q665,354 670,368" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M350,366 Q355,352 360,366" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.25"/>
+  <path d="M430,367 Q435,353 440,367" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.25"/>
+
+  <!-- Divider -->
+  <line x1="150" y1="408" x2="650" y2="408" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="445" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="url(#gold)" letter-spacing="3">50 ACRES OF TRADITION</text>
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="140" cy="445" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="660" cy="445" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="35%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <pattern id="brick" x="0" y="0" width="40" height="20" patternUnits="userSpaceOnUse">
+      <rect width="40" height="20" fill="none"/>
+      <rect x="1" y="1" width="37" height="8" rx="1" fill="#c9a84c" opacity="0.03"/>
+      <rect x="21" y="11" width="18" height="8" rx="1" fill="#c9a84c" opacity="0.03"/>
+      <rect x="1" y="11" width="18" height="8" rx="1" fill="#c9a84c" opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#brick)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Building / lodge icon -->
+  <!-- Main body -->
+  <rect x="295" y="255" width="210" height="135" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.85"/>
+  <!-- Roof -->
+  <polygon points="280,255 400,160 520,255" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.85"/>
+  <!-- Chimney -->
+  <rect x="450" y="175" width="22" height="45" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.7"/>
+  <!-- Smoke wisps -->
+  <path d="M461,175 Q455,160 463,148" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="3,3"/>
+  <path d="M470,172 Q478,158 470,145" stroke="#c9a84c" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="3,3"/>
+
+  <!-- Door (centered) -->
+  <rect x="374" y="305" width="52" height="85" rx="26" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.75"/>
+  <!-- Door knob -->
+  <circle cx="420" cy="347" r="4" fill="#c9a84c" opacity="0.6"/>
+
+  <!-- Left window -->
+  <rect x="315" y="275" width="45" height="40" rx="4" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.7"/>
+  <line x1="337" y1="275" x2="337" y2="315" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+  <line x1="315" y1="295" x2="360" y2="295" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+
+  <!-- Right window -->
+  <rect x="440" y="275" width="45" height="40" rx="4" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.7"/>
+  <line x1="462" y1="275" x2="462" y2="315" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+  <line x1="440" y1="295" x2="485" y2="295" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+
+  <!-- Ground -->
+  <line x1="250" y1="390" x2="550" y2="390" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Divider -->
+  <line x1="180" y1="418" x2="620" y2="418" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="458" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="33" font-weight="bold" fill="url(#gold)" letter-spacing="2">LODGE CLUBHOUSE</text>
+  <text x="400" y="493" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="170" cy="458" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="630" cy="458" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>

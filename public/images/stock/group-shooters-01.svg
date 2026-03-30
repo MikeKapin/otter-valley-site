@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0e00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07030;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="44%" r="40%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:0.13" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:0" />
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="1" fill="#c9a84c" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#dots)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- Borders -->
+  <rect x="0" y="0" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="597" width="800" height="3" fill="url(#gold)" opacity="0.5"/>
+  <rect x="0" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+  <rect x="797" y="0" width="3" height="600" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- Corner accents -->
+  <path d="M20,20 L60,20 M20,20 L20,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,20 L740,20 M780,20 L780,60" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M20,580 L60,580 M20,580 L20,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M780,580 L740,580 M780,580 L780,540" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Ground line -->
+  <line x1="120" y1="355" x2="680" y2="355" stroke="#c9a84c" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Person 1 (far left, smaller/background) -->
+  <circle cx="255" cy="238" r="18" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.5"/>
+  <line x1="255" y1="256" x2="255" y2="325" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="225" y1="285" x2="285" y2="285" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="255" y1="325" x2="232" y2="358" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="255" y1="325" x2="278" y2="358" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+
+  <!-- Person 2 (center-left) -->
+  <circle cx="345" cy="218" r="22" fill="none" stroke="url(#gold)" stroke-width="2.2" opacity="0.8"/>
+  <line x1="345" y1="240" x2="345" y2="318" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="308" y1="272" x2="382" y2="272" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="345" y1="318" x2="318" y2="358" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="345" y1="318" x2="372" y2="358" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+
+  <!-- Person 3 (center — tallest/hero) -->
+  <circle cx="400" cy="200" r="25" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.95"/>
+  <line x1="400" y1="225" x2="400" y2="315" stroke="#c9a84c" stroke-width="3" opacity="0.9"/>
+  <line x1="358" y1="260" x2="442" y2="260" stroke="#c9a84c" stroke-width="3" opacity="0.9"/>
+  <line x1="400" y1="315" x2="370" y2="358" stroke="#c9a84c" stroke-width="3" opacity="0.9"/>
+  <line x1="400" y1="315" x2="430" y2="358" stroke="#c9a84c" stroke-width="3" opacity="0.9"/>
+
+  <!-- Person 4 (center-right) -->
+  <circle cx="455" cy="218" r="22" fill="none" stroke="url(#gold)" stroke-width="2.2" opacity="0.8"/>
+  <line x1="455" y1="240" x2="455" y2="318" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="418" y1="272" x2="492" y2="272" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="455" y1="318" x2="428" y2="358" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+  <line x1="455" y1="318" x2="482" y2="358" stroke="#c9a84c" stroke-width="2.5" opacity="0.75"/>
+
+  <!-- Person 5 (far right, smaller/background) -->
+  <circle cx="545" cy="238" r="18" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.5"/>
+  <line x1="545" y1="256" x2="545" y2="325" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="515" y1="285" x2="575" y2="285" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="545" y1="325" x2="522" y2="358" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+  <line x1="545" y1="325" x2="568" y2="358" stroke="#c9a84c" stroke-width="2" opacity="0.5"/>
+
+  <!-- Connecting arc below all figures (community feel) -->
+  <path d="M225,370 Q400,390 575,370" stroke="#c9a84c" stroke-width="1" fill="none" opacity="0.25"/>
+
+  <!-- Divider -->
+  <line x1="180" y1="408" x2="620" y2="408" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Main label -->
+  <text x="400" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="url(#gold)" letter-spacing="3">CLUB COMMUNITY</text>
+  <text x="400" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#c9a84c" opacity="0.7" letter-spacing="2">OTTER VALLEY ROD &amp; GUN CLUB</text>
+
+  <circle cx="165" cy="450" r="3" fill="#c9a84c" opacity="0.5"/>
+  <circle cx="635" cy="450" r="3" fill="#c9a84c" opacity="0.5"/>
+
+  <rect x="300" y="530" width="200" height="28" rx="4" fill="#c9a84c" opacity="0.08"/>
+  <text x="400" y="549" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c9a84c" opacity="0.5" letter-spacing="1">PHOTO PLACEHOLDER</text>
+</svg>
