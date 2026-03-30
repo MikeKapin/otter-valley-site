@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroVideo from '../../components/HeroVideo.astro';
+---
+
+<BaseLayout
+  title="Rifle Range"
+  description="Rifle range at Otter Valley — 15 covered stations, 200-yard outdoor range with steel gongs."
+>
+
+  <HeroVideo
+    compact={true}
+    title="Rifle"
+    tagline="200 yards of precision."
+    backgroundImage="/images/club/rifle-range-01.jpg"
+  />
+
+  <!-- Overview -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2>The Range</h2>
+          <hr class="gold-divider" style="margin-left: 0;" />
+          <p>
+            Otter Valley's outdoor rifle range stretches 200 yards and offers 15 covered shooting
+            stations for members of all experience levels. Whether you're dialling in a new scope
+            or working on precision at distance, this range has a position for you.
+          </p>
+          <p>
+            Station 1 is dedicated to bench-rest sighting at 25 yards — ideal for new rifles and
+            newly mounted optics. Stations 2 and 3 support freehand shooting at 25, 50, 100, and
+            200 yards. The remaining 12 stations are bench-rest only, available at the same distances.
+          </p>
+          <p>
+            At 200 yards, a reactive target bunker features steel gongs that provide instant audible
+            and visual feedback — one of the most satisfying experiences the range has to offer.
+          </p>
+        </div>
+
+        <div>
+          <h3>Facility Specifications</h3>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="spec-label">Total Stations</td>
+                <td>15 covered stations</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Max Distance</td>
+                <td>200 yards</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Available Distances</td>
+                <td>25 · 50 · 100 · 200 yards</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Station 1</td>
+                <td>Bench rest — 25-yard sighting only</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Stations 2–3</td>
+                <td>Freehand — all distances</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Stations 4–15</td>
+                <td>Bench rest only — all distances</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Reactive Targets</td>
+                <td>Steel gongs in 200-yard bunker</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Cover</td>
+                <td>All stations covered</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Range Culture -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>A Place of Refuge</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 680px; margin: 0 auto;">
+        Our members come from every background and skill level. At Otter Valley, the rifle range
+        is a place of refuge — a space where experienced shooters and first-timers alike are
+        welcome. If you're new to a discipline or just getting set up, fellow members are happy
+        to offer guidance without judgment. We shoot together.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rules -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">Range Rules</h2>
+      <hr class="gold-divider" />
+      <div class="grid-2">
+        <div class="card">
+          <h3>Safety Requirements</h3>
+          <ul class="rules-list">
+            <li>Hearing protection and safety glasses are mandatory during live range operation.</li>
+            <li>All firearms must be in a safe state (action open, unloaded) during any ceasefire.</li>
+            <li>No one steps onto the range floor while the range is live.</li>
+            <li>A rest must be used on all bench stations — rifle rest, bipod, or lead sled. Freehand is permitted only at stations 2 and 3.</li>
+            <li>New firearms must be sighted in at 25 yards before shooting at greater distances.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Range Procedures</h3>
+          <ul class="rules-list">
+            <li>Sign in at the handgun pavilion before use. Verify the range flag and open/closed sign.</li>
+            <li>The designated Range Officer is responsible for calling ceasefires. Follow all Range Officer instructions immediately.</li>
+            <li>Handguns of any type are <strong>not permitted</strong> at the rifle range.</li>
+            <li>Guests are the full responsibility of the sponsoring member at all times.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Range Gallery</h2>
+      <hr class="gold-divider" />
+      <div class="gallery-grid">
+        <img src="/images/club/rifle-range-01.jpg" alt="Rifle range covered stations" loading="lazy" />
+        <img src="/images/club/rifle-range-02.jpg" alt="Bench rest stations at the rifle range" loading="lazy" />
+        <img src="/images/club/rifle-range-03.jpg" alt="Downrange view of the rifle range" loading="lazy" />
+        <img src="/images/club/rifle-range-04.jpg" alt="200-yard berm with steel gong bunker" loading="lazy" />
+        <img src="/images/club/rifle-range-05.jpg" alt="Covered firing line at Otter Valley rifle range" loading="lazy" />
+        <img src="/images/club/rifle-range-06.jpg" alt="Shooter at the rifle range bench" loading="lazy" />
+        <img src="/images/club/rifle-range-07.jpg" alt="Rifle range at Otter Valley Rod & Gun Club" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Disciplines -->
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Explore Other Disciplines</h2>
+      <hr class="gold-divider" />
+      <div class="discipline-links">
+        <a href="/disciplines/handgun/" class="btn btn-gold">Handgun</a>
+        <a href="/disciplines/trap/" class="btn btn-gold">Trap Shooting</a>
+        <a href="/disciplines/sporting-clays/" class="btn btn-gold">Sporting Clays</a>
+        <a href="/disciplines/archery/" class="btn btn-gold">Archery</a>
+        <a href="/disciplines/fishing/" class="btn btn-gold">Fishing Pond</a>
+      </div>
+      <div style="margin-top: 2rem;">
+        <a href="/" class="btn btn-gold">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .specs-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--brown-light);
+    color: var(--cream);
+    vertical-align: top;
+  }
+
+  .specs-table .spec-label {
+    color: var(--gold);
+    font-weight: 600;
+    white-space: nowrap;
+    width: 40%;
+  }
+
+  .specs-table tr:nth-child(even) {
+    background: rgba(62, 39, 35, 0.4);
+  }
+
+  .rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+  }
+
+  .rules-list li {
+    padding: 0.5rem 0 0.5rem 1.4rem;
+    position: relative;
+    border-bottom: 1px solid rgba(93, 64, 55, 0.4);
+    font-size: 0.95rem;
+    color: var(--cream);
+  }
+
+  .rules-list li:last-child {
+    border-bottom: none;
+  }
+
+  .rules-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--brown-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .gallery-grid img:first-child {
+    grid-column: 1 / -1;
+    height: 320px;
+  }
+
+  .discipline-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-grid img:first-child {
+      grid-column: 1 / -1;
+      height: 380px;
+    }
+  }
+</style>

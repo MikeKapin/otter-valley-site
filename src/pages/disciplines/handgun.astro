@@ -1,0 +1,325 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroVideo from '../../components/HeroVideo.astro';
+---
+
+<BaseLayout
+  title="Handgun Range"
+  description="Handgun range at Otter Valley — indoor and outdoor facilities, all calibers welcome."
+>
+
+  <HeroVideo
+    compact={true}
+    title="Handgun"
+    tagline="Controlled. Accurate. Disciplined."
+    backgroundImage="/images/club/handgun-range-01.jpg"
+  />
+
+  <!-- Overview -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2>Two Ranges, One Discipline</h2>
+          <hr class="gold-divider" style="margin-left: 0;" />
+          <p>
+            Otter Valley's handgun facilities offer both outdoor and indoor shooting environments,
+            giving members year-round access to the sport regardless of weather. All handgun
+            calibers and rimfire rifles are welcome on the outdoor range.
+          </p>
+          <p>
+            The outdoor range features paper target boards at 10 and 20 yards, plus a reactive
+            target bunker with steel gongs at 25 yards. It's available from 9 AM to sunset,
+            with extended summer availability throughout June, July, and August.
+          </p>
+          <p>
+            For target-focused work, the covered indoor 20-yard bullseye range provides six
+            dedicated shooting stations in a controlled environment. The indoor range is reserved
+            for target shooting on Tuesday evenings (except during summer months).
+          </p>
+        </div>
+
+        <div>
+          <h3>Facility Specifications</h3>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td class="spec-label">Outdoor Distances</td>
+                <td>10 yd · 20 yd (paper) · 25 yd (steel gongs)</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Outdoor Hours</td>
+                <td>9 AM to sunset daily</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Summer (June–Aug)</td>
+                <td>Available anytime, barring scheduled events</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Outdoor Calibers</td>
+                <td>All handgun calibers + rimfire rifles</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Indoor Stations</td>
+                <td>6 covered shooting stations</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Indoor Distance</td>
+                <td>20 yards</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Indoor Calibers</td>
+                <td>Rimfire and centrefire (FMJ/AP prohibited)</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Indoor Schedule</td>
+                <td>Tuesday evenings (non-summer months)</td>
+              </tr>
+              <tr>
+                <td class="spec-label">Indoor Fee (outdoor members)</td>
+                <td>$5 nightly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indoor Range Detail -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Indoor Bullseye Range</h2>
+      <hr class="gold-divider" />
+      <div class="grid-2">
+        <div class="card">
+          <h3>Target Standards</h3>
+          <p>
+            The indoor range uses 20-yard slow-fire targets that meet Shooting Federation
+            of Canada standards. Whether you're working on your fundamentals or preparing
+            for competition, these targets provide the precision reference you need.
+          </p>
+          <p style="margin-bottom: 0;">
+            Full metal jacket and armour-piercing ammunition is <strong>prohibited</strong> indoors
+            to protect range infrastructure.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Closing Responsibilities</h3>
+          <p>
+            When you are the last shooter to leave the indoor range, please ensure:
+          </p>
+          <ul class="rules-list">
+            <li>Thermostat set to 50°F</li>
+            <li>All lights are off</li>
+            <li>All doors are secured and locked</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">Range Rules &amp; Responsibilities</h2>
+      <hr class="gold-divider" />
+      <div class="grid-2">
+        <div class="card">
+          <h3>Outdoor Range</h3>
+          <ul class="rules-list">
+            <li>Display the "Range Open" sign during use so other members know the range is active.</li>
+            <li>Outdoor range is available 9 AM to sunset. During summer, it is available anytime when no events are scheduled.</li>
+            <li>All handgun calibers and rimfire rifles permitted.</li>
+            <li>Clean the range before you leave — leave it better than you found it.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Indoor Range</h3>
+          <ul class="rules-list">
+            <li>Reserved for target shooting on <strong>Tuesday evenings</strong> (non-summer months only).</li>
+            <li>Outdoor-only members may use the indoor range for a $5 nightly fee.</li>
+            <li>Full metal jacket (FMJ) and armour-piercing (AP) ammunition are strictly prohibited.</li>
+            <li>On departure: set thermostat to 50°F, turn off all lights, lock all doors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Handgun Section Contact</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 560px; margin: 0 auto 1.5rem;">
+        For questions about the handgun range, Tuesday evening target sessions, or membership
+        in the handgun section, contact our Handgun Director directly.
+      </p>
+      <div class="contact-card">
+        <p class="contact-name">Bob Rischel</p>
+        <p class="contact-role">Handgun Section Director</p>
+        <div class="contact-links">
+          <a href="tel:+15195892988" class="btn btn-gold">519-589-2988</a>
+          <a href="mailto:rischel@golden.net" class="btn btn-gold">rischel@golden.net</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">Range Gallery</h2>
+      <hr class="gold-divider" />
+      <div class="gallery-grid">
+        <img src="/images/club/handgun-range-01.jpg" alt="Handgun range at Otter Valley Rod & Gun Club" loading="lazy" />
+        <img src="/images/club/handgun-range-02.jpg" alt="Indoor bullseye range with shooting stations" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Other Disciplines -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Explore Other Disciplines</h2>
+      <hr class="gold-divider" />
+      <div class="discipline-links">
+        <a href="/disciplines/rifle/" class="btn btn-gold">Rifle Range</a>
+        <a href="/disciplines/trap/" class="btn btn-gold">Trap Shooting</a>
+        <a href="/disciplines/sporting-clays/" class="btn btn-gold">Sporting Clays</a>
+        <a href="/disciplines/archery/" class="btn btn-gold">Archery</a>
+        <a href="/disciplines/fishing/" class="btn btn-gold">Fishing Pond</a>
+      </div>
+      <div style="margin-top: 2rem;">
+        <a href="/" class="btn btn-gold">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .specs-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--brown-light);
+    color: var(--cream);
+    vertical-align: top;
+  }
+
+  .specs-table .spec-label {
+    color: var(--gold);
+    font-weight: 600;
+    white-space: nowrap;
+    width: 42%;
+  }
+
+  .specs-table tr:nth-child(even) {
+    background: rgba(62, 39, 35, 0.4);
+  }
+
+  .rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+  }
+
+  .rules-list li {
+    padding: 0.5rem 0 0.5rem 1.4rem;
+    position: relative;
+    border-bottom: 1px solid rgba(93, 64, 55, 0.4);
+    font-size: 0.95rem;
+    color: var(--cream);
+  }
+
+  .rules-list li:last-child {
+    border-bottom: none;
+  }
+
+  .rules-list li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--brown-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .contact-card {
+    display: inline-block;
+    background: var(--brown-base);
+    border: 1px solid var(--brown-light);
+    border-radius: 6px;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+
+  .contact-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-role {
+    font-size: 0.9rem;
+    color: var(--cream);
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .discipline-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid img {
+      height: 340px;
+    }
+  }
+</style>
