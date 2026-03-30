@@ -1,0 +1,366 @@
+/* ═══════════════════════════════════════════════════════
+   Otter Valley Rod & Gun Club — Heritage Brand System
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  /* Colors */
+  --brown-darkest: #1b0e00;
+  --brown-dark: #2d1b00;
+  --brown-base: #3e2723;
+  --brown-light: #5d4037;
+  --gold: #c9a84c;
+  --gold-light: #d4ba6a;
+  --gold-dark: #a68a3e;
+  --cream: #f5e6c8;
+  --cream-light: #faf3e6;
+  --red-cta: #8b0000;
+  --red-cta-hover: #a50000;
+  --green: #2e7d32;
+  --yellow: #f9a825;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  /* Spacing */
+  --container-max: 1200px;
+  --section-pad: 5rem 1.5rem;
+  --section-pad-mobile: 3rem 1rem;
+
+  /* Transitions */
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ── Reset & Base ─────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--brown-darkest);
+  color: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+/* ── Typography ───────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--gold);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1rem; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.75rem; }
+h3 { font-size: clamp(1.3rem, 3vw, 1.75rem); margin-bottom: 0.5rem; }
+h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+
+p {
+  margin-bottom: 1rem;
+  color: var(--cream);
+}
+
+/* ── Layout ───────────────────────────────────── */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: var(--section-pad);
+}
+
+.section-dark {
+  background-color: var(--brown-dark);
+}
+
+.section-base {
+  background-color: var(--brown-base);
+}
+
+/* ── Gold Divider ─────────────────────────────── */
+
+.gold-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 2rem auto;
+  max-width: 200px;
+}
+
+.gold-divider-wide {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+  margin: 3rem 0;
+}
+
+/* ── Buttons ──────────────────────────────────── */
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: center;
+}
+
+.btn-gold {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn-gold:hover {
+  background: var(--gold);
+  color: var(--brown-darkest);
+}
+
+.btn-red {
+  border: 2px solid var(--red-cta);
+  background: var(--red-cta);
+  color: var(--cream);
+}
+
+.btn-red:hover {
+  background: var(--red-cta-hover);
+  border-color: var(--red-cta-hover);
+}
+
+/* ── Cards ────────────────────────────────────── */
+
+.card {
+  background: var(--brown-base);
+  border: 1px solid var(--brown-light);
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Forms ────────────────────────────────────── */
+
+input, textarea, select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--brown-dark);
+  border: 1px solid var(--brown-light);
+  color: var(--cream);
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color var(--transition);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+/* ── Tables ───────────────────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+th {
+  background: var(--brown-base);
+  color: var(--gold);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--gold-dark);
+  cursor: pointer;
+  user-select: none;
+}
+
+td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--brown-light);
+}
+
+tr:nth-child(even) {
+  background: rgba(62, 39, 35, 0.4);
+}
+
+tr:hover {
+  background: rgba(201, 168, 76, 0.1);
+}
+
+/* ── Video Containers ─────────────────────────── */
+
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-hero video,
+.video-hero .video-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 14, 0, 0.6) 0%,
+    rgba(27, 14, 0, 0.3) 50%,
+    rgba(27, 14, 0, 0.8) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ── Utilities ────────────────────────────────── */
+
+.text-center { text-align: center; }
+.text-gold { color: var(--gold); }
+.text-cream { color: var(--cream); }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-4 { margin-top: 2rem; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ── Responsive ───────────────────────────────── */
+
+@media (min-width: 768px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: var(--section-pad); }
+}
+
+@media (min-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Status Indicators ────────────────────────── */
+
+.status-open { color: var(--green); }
+.status-closed { color: var(--red-cta); }
+.status-reserved { color: var(--yellow); }
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.status-dot.open { background: var(--green); }
+.status-dot.closed { background: var(--red-cta); }
+.status-dot.reserved { background: var(--yellow); }
+
+/* ── Page Hero (non-video) ────────────────────── */
+
+.page-hero {
+  padding: 8rem 1.5rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--brown-dark) 0%, var(--brown-darkest) 100%);
+  position: relative;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.page-hero p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+  opacity: 0.9;
+}
