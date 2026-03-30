@@ -82,7 +82,10 @@ const upcoming = events
       <p style="max-width: 600px; margin: 0 auto 1.5rem;">
         Become a member of one of Ontario's premier shooting sports clubs. Individual, family, junior, and senior memberships available.
       </p>
-      <a href="/membership/" class="btn btn-gold">Learn About Membership</a>
+      <div class="cta-buttons">
+        <a href="/membership/" class="btn btn-gold">Learn About Membership</a>
+        <a href="https://otter-valley-app.pages.dev" target="_blank" class="btn btn-gold">Try Our Member App</a>
+      </div>
     </div>
   </section>
 
@@ -112,5 +115,12 @@ const upcoming = events
     gap: 1rem;
     max-width: 800px;
     margin: 2rem auto 0;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 </style>
