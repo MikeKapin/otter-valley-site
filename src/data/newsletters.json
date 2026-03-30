@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "March 2026 Newsletter",
+    "date": "2026-03-01",
+    "summary": "CAN-AM preparations, spring work day announcement, new range rules.",
+    "url": "#"
+  },
+  {
+    "id": "2",
+    "title": "February 2026 Newsletter",
+    "date": "2026-02-01",
+    "summary": "Winter shooting hours, annual meeting recap, membership renewal reminder.",
+    "url": "#"
+  },
+  {
+    "id": "3",
+    "title": "January 2026 Newsletter",
+    "date": "2026-01-01",
+    "summary": "New Year message from the president, 2026 calendar preview.",
+    "url": "#"
+  },
+  {
+    "id": "4",
+    "title": "December 2025 Newsletter",
+    "date": "2025-12-01",
+    "summary": "Christmas dinner recap, year-end financials, CAN-AM 2025 results summary.",
+    "url": "#"
+  },
+  {
+    "id": "5",
+    "title": "November 2025 Newsletter",
+    "date": "2025-11-01",
+    "summary": "AGM results, new board members, winter range hours.",
+    "url": "#"
+  },
+  {
+    "id": "6",
+    "title": "October 2025 Newsletter",
+    "date": "2025-10-01",
+    "summary": "Club championship results, fall work day photos, hunting season reminder.",
+    "url": "#"
+  }
+]

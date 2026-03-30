@@ -1,0 +1,29 @@
+{
+  "event": "CAN-AM Trap Shoot 2025",
+  "date": "2025-07-20",
+  "location": "Otter Valley Rod & Gun Club, Tillsonburg, ON",
+  "format": "16-yard registered trap, 200 birds",
+  "entries": 78,
+  "results": [
+    {"rank": 1, "name": "Dale Kowalski",       "score": 196, "class": "AA", "origin": "London, ON"},
+    {"rank": 2, "name": "Travis Beaumont",     "score": 194, "class": "AA", "origin": "Buffalo, NY"},
+    {"rank": 3, "name": "Rick Vandermeer",     "score": 193, "class": "AA", "origin": "Woodstock, ON"},
+    {"rank": 4, "name": "Craig Hollenbeck",    "score": 192, "class": "AA", "origin": "Rochester, NY"},
+    {"rank": 5, "name": "Steve Archambault",   "score": 191, "class": "AA", "origin": "Windsor, ON"},
+    {"rank": 6, "name": "Jeff Proulx",         "score": 189, "class": "A",  "origin": "Stratford, ON"},
+    {"rank": 7, "name": "Norm Zukowski",       "score": 188, "class": "A",  "origin": "Erie, PA"},
+    {"rank": 8, "name": "Barry Timmins",       "score": 187, "class": "A",  "origin": "Brantford, ON"},
+    {"rank": 9, "name": "Walt Czerwinski",     "score": 186, "class": "A",  "origin": "Hamilton, ON"},
+    {"rank": 10, "name": "Ken Strickland",     "score": 185, "class": "A",  "origin": "Syracuse, NY"},
+    {"rank": 11, "name": "Doug Lefebvre",      "score": 183, "class": "B",  "origin": "Simcoe, ON"},
+    {"rank": 12, "name": "Paul Haggerty",      "score": 182, "class": "B",  "origin": "Dunkirk, NY"},
+    {"rank": 13, "name": "Glen Dabrowski",     "score": 181, "class": "B",  "origin": "Kitchener, ON"},
+    {"rank": 14, "name": "Murray Sanderson",   "score": 180, "class": "B",  "origin": "Tillsonburg, ON"},
+    {"rank": 15, "name": "Tom Wicklund",       "score": 178, "class": "B",  "origin": "Cambridge, ON"},
+    {"rank": 16, "name": "Frank Meszaros",     "score": 176, "class": "C",  "origin": "Niagara Falls, ON"},
+    {"rank": 17, "name": "Ed Gronowski",       "score": 174, "class": "C",  "origin": "Lockport, NY"},
+    {"rank": 18, "name": "Lyle Buchanan",      "score": 172, "class": "C",  "origin": "Simcoe, ON"},
+    {"rank": 19, "name": "Cory Pelletier",     "score": 170, "class": "C",  "origin": "Aylmer, ON"},
+    {"rank": 20, "name": "Rod Blanchard",      "score": 162, "class": "D",  "origin": "Delhi, ON"}
+  ]
+}

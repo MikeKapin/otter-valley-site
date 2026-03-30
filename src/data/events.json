@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "title": "Tuesday Night Trap League — Week 1",
+    "date": "2026-04-07",
+    "category": "league",
+    "discipline": "trap",
+    "description": "Season opener for the Tuesday Night Trap League. 25-bird rounds, all classes welcome. Registration at 6:00 PM, shooting starts at 6:30 PM. League runs every Tuesday through September.",
+    "location": "Trap Fields 1–4"
+  },
+  {
+    "id": "2",
+    "title": "Spring Work Day",
+    "date": "2026-04-26",
+    "category": "maintenance",
+    "description": "Annual spring grounds cleanup and range maintenance. All members encouraged to attend. Coffee and lunch provided. Bring work gloves. Contact the range officer for the task list.",
+    "location": "Entire Club Grounds"
+  },
+  {
+    "id": "3",
+    "title": "Board Meeting — April",
+    "date": "2026-04-15",
+    "category": "meeting",
+    "description": "Monthly board of directors meeting. Members are welcome to attend as observers. Agenda items include CAN-AM preparations, range maintenance budget, and membership renewals.",
+    "location": "Clubhouse"
+  },
+  {
+    "id": "4",
+    "title": "Opening Day BBQ",
+    "date": "2026-05-03",
+    "category": "social",
+    "description": "Celebrate the start of the shooting season with a club BBQ. Burgers, dogs, and soft drinks provided. Bring your own lawn chair. All members and their families welcome. Shooting demonstrations on the trap fields.",
+    "location": "Clubhouse & Grounds"
+  },
+  {
+    "id": "5",
+    "title": "Tuesday Night Trap League",
+    "date": "2026-04-14",
+    "category": "league",
+    "discipline": "trap",
+    "description": "Weekly Tuesday Night Trap League. 25-bird rounds, registered scoring. All skill classes. Registration at 6:00 PM.",
+    "location": "Trap Fields 1–4"
+  },
+  {
+    "id": "6",
+    "title": "Board Meeting — May",
+    "date": "2026-05-20",
+    "category": "meeting",
+    "description": "Monthly board of directors meeting. Agenda: range usage reports, CAN-AM logistics, new member applications.",
+    "location": "Clubhouse"
+  },
+  {
+    "id": "7",
+    "title": "Family Fun Day",
+    "date": "2026-06-14",
+    "category": "social",
+    "description": "A day for the whole family — introductory trap shooting, archery coaching, fishing pond access, and a picnic lunch. Perfect for introducing new shooters. Safety briefing required for all first-timers. No experience necessary.",
+    "location": "Entire Club Grounds"
+  },
+  {
+    "id": "8",
+    "title": "CAN-AM Trap Shoot",
+    "date": "2026-07-19",
+    "endDate": "2026-07-20",
+    "category": "competition",
+    "discipline": "trap",
+    "description": "The flagship event of the Otter Valley season. Two days of registered trap competition drawing shooters from across Ontario and the northeastern United States. Five-stand, 16-yard, and handicap events. On-site scoring, trophies, and awards banquet Saturday evening. Pre-registration required.",
+    "location": "Trap Fields 1–4 & Clubhouse"
+  },
+  {
+    "id": "9",
+    "title": "Handgun Silhouette Match",
+    "date": "2026-08-16",
+    "category": "competition",
+    "discipline": "handgun",
+    "description": "Steel silhouette pistol competition. NRA-format scoring. Distances from 25 to 100 metres. Open to licensed handgun owners. Registration at 8:30 AM, first shots at 9:00 AM. Bring eye and ear protection.",
+    "location": "Pistol Range"
+  },
+  {
+    "id": "10",
+    "title": "Archery 3D Shoot",
+    "date": "2026-09-06",
+    "category": "competition",
+    "discipline": "archery",
+    "description": "Annual 3D archery shoot through the wooded course. Targets include full-size foam animals at unmarked distances. Open to compound, recurve, and traditional bow. Score cards provided. All skill levels welcome.",
+    "location": "Archery Range & Wooded Course"
+  },
+  {
+    "id": "11",
+    "title": "Fall Work Day",
+    "date": "2026-10-04",
+    "category": "maintenance",
+    "description": "End-of-season grounds maintenance and winterization. Tasks include trap machine servicing, range cleanup, drain-down of water lines, and storage of summer equipment. Lunch provided. All hands on deck.",
+    "location": "Entire Club Grounds"
+  },
+  {
+    "id": "12",
+    "title": "Club Trap Championship",
+    "date": "2026-10-18",
+    "category": "competition",
+    "discipline": "trap",
+    "description": "The annual Otter Valley Club Trap Championship. 100-bird registered event across all classes — AA, A, B, C, and D. Top three in each class receive awards. Must be a current member in good standing to enter. Registration opens October 1.",
+    "location": "Trap Fields 1–4"
+  },
+  {
+    "id": "13",
+    "title": "Annual General Meeting",
+    "date": "2026-11-15",
+    "category": "meeting",
+    "description": "Annual General Meeting of the Otter Valley Rod & Gun Club. Election of officers for the 2027 term, presentation of financial statements, review of bylaw amendments, and open floor for member business. All members in good standing eligible to vote.",
+    "location": "Clubhouse"
+  },
+  {
+    "id": "14",
+    "title": "Christmas Dinner",
+    "date": "2026-12-06",
+    "category": "social",
+    "description": "Annual Christmas Dinner and year-end celebration. Turkey dinner, awards presentation, and door prizes. Tickets available at the clubhouse. Partners and guests welcome. Casual dress. Tickets must be purchased in advance — limited seating.",
+    "location": "Clubhouse"
+  }
+]

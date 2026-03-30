@@ -1,0 +1,11 @@
+{
+  "lastUpdated": "2026-03-30T12:00:00",
+  "ranges": [
+    {"name": "Rifle Range", "status": "open", "note": ""},
+    {"name": "Pistol Range", "status": "open", "note": ""},
+    {"name": "Trap Fields", "status": "open", "note": "Fields 1-4 available"},
+    {"name": "Sporting Clays", "status": "open", "note": "Full 10-station course"},
+    {"name": "Archery Range", "status": "open", "note": ""},
+    {"name": "Fishing Pond", "status": "open", "note": "Catch and release"}
+  ]
+}

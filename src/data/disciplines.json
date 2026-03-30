@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Trap Shooting",
+    "slug": "trap",
+    "tagline": "Four fields. One target. Pure focus.",
+    "specs": {
+      "fields": 4,
+      "type": "Trap",
+      "equipment": "Automatic throwers"
+    },
+    "hours": "See posted schedule",
+    "image": "/images/club/trap-field-01.jpg"
+  },
+  {
+    "name": "Sporting Clays",
+    "slug": "sporting-clays",
+    "tagline": "10 stations through 50 acres of Ontario woodland.",
+    "specs": {
+      "stations": 10,
+      "type": "Sporting Clays",
+      "terrain": "Wooded course"
+    },
+    "hours": "See posted schedule",
+    "image": "/images/stock/sporting-clays-01.svg"
+  },
+  {
+    "name": "Rifle",
+    "slug": "rifle",
+    "tagline": "200 yards of precision.",
+    "specs": {
+      "distance": "200 yards",
+      "type": "Outdoor",
+      "positions": "Bench + prone"
+    },
+    "hours": "See posted schedule",
+    "image": "/images/club/rifle-range-01.jpg"
+  },
+  {
+    "name": "Handgun",
+    "slug": "handgun",
+    "tagline": "Controlled. Accurate. Disciplined.",
+    "specs": {
+      "type": "Pistol range",
+      "distances": "Various"
+    },
+    "hours": "See posted schedule",
+    "image": "/images/club/handgun-range-01.jpg"
+  },
+  {
+    "name": "Archery",
+    "slug": "archery",
+    "tagline": "Traditional skill. Modern range.",
+    "specs": {
+      "type": "Outdoor range",
+      "features": "3D targets available"
+    },
+    "hours": "See posted schedule",
+    "image": "/images/club/archery-range-01.jpg"
+  },
+  {
+    "name": "Fishing Pond",
+    "slug": "fishing",
+    "tagline": "Cast a line. Enjoy the quiet.",
+    "specs": {
+      "type": "Stocked pond",
+      "species": "Various"
+    },
+    "hours": "Dawn to dusk",
+    "image": "/images/club/fishing-pond-01.jpg"
+  }
+]
