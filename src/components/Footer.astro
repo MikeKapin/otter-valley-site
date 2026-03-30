@@ -1,0 +1,210 @@
+---
+import AffiliateBar from './AffiliateBar.astro';
+---
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/images/club/club-logo.jpg" alt="Otter Valley Rod & Gun Club" class="footer-logo" width="60" height="60" />
+          <p class="footer-address">
+            9908 Plank Road<br />
+            Straffordville, Ontario<br />
+            Canada
+          </p>
+          <p class="footer-email">
+            <a href="mailto:ovrag@hotmail.com">ovrag@hotmail.com</a>
+          </p>
+          <p class="footer-notice">Private property. No trespassing.<br />No hunting allowed on club grounds.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/membership/">Membership</a></li>
+            <li><a href="/events/">Events</a></li>
+            <li><a href="/can-am/">CAN-AM</a></li>
+            <li><a href="/results/">Results</a></li>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul>
+            <li><a href="/disciplines/trap/">Trap Shooting</a></li>
+            <li><a href="/disciplines/sporting-clays/">Sporting Clays</a></li>
+            <li><a href="/disciplines/rifle/">Rifle</a></li>
+            <li><a href="/disciplines/handgun/">Handgun</a></li>
+            <li><a href="/disciplines/archery/">Archery</a></li>
+            <li><a href="/disciplines/fishing/">Fishing Pond</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <form name="newsletter" method="POST" data-netlify="true" class="newsletter-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <label for="footer-email-input">Subscribe to our newsletter</label>
+            <input type="email" id="footer-email-input" name="email" placeholder="Your email" required />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+          <div class="social-links">
+            <a href="https://www.facebook.com/OtterValleyRodandGunClub/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <AffiliateBar />
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} Otter Valley Rod & Gun Club. All rights reserved.</p>
+      <p class="footer-credit">Built with care by Mike Kapin</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--brown-dark);
+    border-top: 1px solid rgba(201, 168, 76, 0.2);
+    margin-top: 4rem;
+  }
+
+  .footer-main {
+    padding: 3rem 0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+    }
+  }
+
+  .footer-logo {
+    border-radius: 50%;
+    border: 2px solid var(--gold-dark);
+    margin-bottom: 1rem;
+  }
+
+  .footer-address {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-email a {
+    color: var(--gold);
+  }
+
+  .footer-notice {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-style: italic;
+    margin-top: 0.75rem;
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-col ul a {
+    color: var(--cream);
+    font-size: 0.9rem;
+    opacity: 0.85;
+    transition: all 0.2s ease;
+  }
+
+  .footer-col ul a:hover {
+    color: var(--gold);
+    opacity: 1;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newsletter-form label {
+    font-size: 0.85rem;
+    color: var(--cream);
+    opacity: 0.85;
+  }
+
+  .newsletter-form input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .newsletter-form .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .social-links a {
+    color: var(--cream);
+    opacity: 0.7;
+    transition: all 0.2s ease;
+  }
+
+  .social-links a:hover {
+    color: var(--gold);
+    opacity: 1;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(201, 168, 76, 0.15);
+    padding: 1.25rem 0;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  .footer-credit {
+    margin-top: 0.25rem !important;
+  }
+</style>

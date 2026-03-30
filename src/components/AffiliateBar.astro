@@ -1,0 +1,53 @@
+---
+const affiliates = [
+  { name: 'CCFR', logo: '/images/logos/ccfr.svg', url: 'https://firearmrights.ca' },
+  { name: 'NFA Canada', logo: '/images/logos/nfa.svg', url: 'https://nfa.ca' },
+  { name: 'OFAH', logo: '/images/logos/ofah.svg', url: 'https://ofah.org' },
+  { name: 'HuntFish Ontario', logo: '/images/logos/huntfish-ontario.svg', url: 'https://huntandfishontario.com' },
+];
+---
+
+<div class="affiliate-bar">
+  <div class="container">
+    <div class="affiliate-logos">
+      {affiliates.map((a) => (
+        <a href={a.url} target="_blank" rel="noopener noreferrer" class="affiliate-link" title={a.name}>
+          <img src={a.logo} alt={a.name} width="140" height="56" loading="lazy" />
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style>
+  .affiliate-bar {
+    padding: 1.25rem 0;
+    background: var(--brown-darkest);
+    border-top: 1px solid rgba(201, 168, 76, 0.1);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  }
+
+  .affiliate-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .affiliate-link {
+    display: block;
+    transition: all 0.3s ease;
+    filter: grayscale(50%) brightness(0.85);
+  }
+
+  .affiliate-link:hover {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.05);
+  }
+
+  .affiliate-link img {
+    height: 45px;
+    width: auto;
+  }
+</style>
