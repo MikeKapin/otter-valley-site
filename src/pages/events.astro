@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import Calendar from '../components/Calendar.astro';
+---
+
+<BaseLayout title="Events & Calendar" description="Events calendar for the Otter Valley Rod & Gun Club — competitions, leagues, socials, and meetings.">
+
+  <HeroVideo compact={true} title="Events & Calendar" tagline="What's happening at the club" />
+
+  <section class="section">
+    <div class="container">
+      <Calendar />
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Featured Events</h2>
+      <hr class="gold-divider" />
+      <div class="grid-3" style="margin-top: 2rem;">
+        <div class="card">
+          <h3 style="font-size: 1.2rem;">CAN-AM Sporting Clay League</h3>
+          <p style="font-size: 0.9rem;">Our flagship inter-club sporting clay league featuring 6 clubs across Ontario and Michigan.</p>
+          <a href="/can-am/" class="btn btn-gold" style="margin-top: 0.5rem;">Learn More</a>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.2rem;">Tuesday Night Trap League</h3>
+          <p style="font-size: 0.9rem;">Weekly trap league running April through September. All skill levels welcome.</p>
+          <a href="/disciplines/trap/" class="btn btn-gold" style="margin-top: 0.5rem;">Trap Details</a>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.2rem;">Annual Trout Derby</h3>
+          <p style="font-size: 0.9rem;">Free fishing event for children 15 and under on opening day of trout season.</p>
+          <a href="/disciplines/fishing/" class="btn btn-gold" style="margin-top: 0.5rem;">Derby Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2>Want to Host an Event?</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+        Our clubhouse and grounds are available for club-related events. Contact us to discuss your event plans.
+      </p>
+      <a href="/contact/" class="btn btn-gold">Contact Us</a>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import ResultsTable from '../components/ResultsTable.astro';
+---
+
+<BaseLayout title="CAN-AM Sporting Clay League" description="CAN-AM Winter Sporting Clay League — six clubs across Ontario and Michigan competing in an annual series.">
+
+  <HeroVideo compact={true} title="CAN-AM" tagline="The Premier Inter-Club Sporting Clay League" backgroundImage="/images/stock/sporting-clays-01.svg" />
+
+  <section class="section">
+    <div class="container">
+      <div class="canam-intro">
+        <h2>About the CAN-AM</h2>
+        <hr class="gold-divider" />
+        <p>
+          The CAN-AM is a competitive sporting clay league featuring clubs known for their outstanding courses and skilled shooters. The league comprises six events, with one hosted at each participating club throughout the season.
+        </p>
+        <p>
+          If you enjoy clay target shooting, you won't want to miss this opportunity to see each club and the targets they are known for throwing. Whether you're a seasoned competitor, a hunter looking to sharpen your wing shooting, or a beginner discovering the sport — the CAN-AM welcomes you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">2025-2026 Schedule</h2>
+      <hr class="gold-divider" />
+      <div class="schedule-list">
+        <div class="schedule-item">
+          <div class="schedule-date">Dec 7, 2025</div>
+          <div class="schedule-info">
+            <h4>Lambton Conservation Association</h4>
+            <p>Petrolia, Ontario</p>
+          </div>
+          <span class="schedule-badge completed">Completed</span>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">Jan 4, 2026</div>
+          <div class="schedule-info">
+            <h4>Lambton Sportsman Club</h4>
+            <p>Sombra, Ontario</p>
+          </div>
+          <span class="schedule-badge completed">Completed</span>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">Feb 1, 2026</div>
+          <div class="schedule-info">
+            <h4>Delaware Rod & Gun Club</h4>
+            <p>Delaware, Ontario</p>
+          </div>
+          <span class="schedule-badge completed">Completed</span>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">Mar 1, 2026</div>
+          <div class="schedule-info">
+            <h4>TWC</h4>
+            <p>Inwood, Ontario</p>
+          </div>
+          <span class="schedule-badge completed">Completed</span>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">Mar 29, 2026</div>
+          <div class="schedule-info">
+            <h4>Four Square Sportsman's Association</h4>
+            <p>Grant Township, Michigan</p>
+          </div>
+          <span class="schedule-badge upcoming">Upcoming</span>
+        </div>
+        <div class="schedule-item highlight">
+          <div class="schedule-date">May 3, 2026</div>
+          <div class="schedule-info">
+            <h4>Otter Valley Rod & Gun Club</h4>
+            <p>Straffordville, Ontario — Finale with Banquet!</p>
+          </div>
+          <span class="schedule-badge home">Home Event</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2>Registration & Details</h2>
+          <hr class="gold-divider" style="margin-left: 0;" />
+          <div class="detail-list">
+            <div class="detail-item">
+              <strong>Entry Fee:</strong>
+              <span>$60 per participant</span>
+            </div>
+            <div class="detail-item">
+              <strong>Includes:</strong>
+              <span>Prizes, gifts for all participants, and final banquet</span>
+            </div>
+            <div class="detail-item">
+              <strong>Team Captain:</strong>
+              <span>Stan Mathews</span>
+            </div>
+            <div class="detail-item">
+              <strong>Phone:</strong>
+              <a href="tel:519-983-2620">519-983-2620</a>
+            </div>
+            <div class="detail-item">
+              <strong>Email:</strong>
+              <a href="mailto:chumlie@outlook.com">chumlie@outlook.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="color: var(--red-cta); font-size: 1.1rem;">Important: Michigan Event</h3>
+          <p style="font-size: 0.9rem;">
+            The Four Square event in Michigan requires a temporary firearms importation permit (ATF Form 6NIA). Processing takes <strong>6-8 weeks</strong>, so apply early!
+          </p>
+          <p style="font-size: 0.85rem; opacity: 0.8;">
+            Contact Stan Mathews for details on the cross-border process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2 class="text-center">Past Results</h2>
+      <hr class="gold-divider" />
+      <p class="text-center" style="margin-bottom: 1.5rem; opacity: 0.8;">CAN-AM 2025 Sporting Clay Results</p>
+      <ResultsTable dataFile="/data/results/can-am-2025.json" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center">
+      <h2>Join Team Otter Valley</h2>
+      <hr class="gold-divider" />
+      <p style="max-width: 600px; margin: 0 auto 1.5rem;">
+        Want to represent Otter Valley in the CAN-AM? Contact our team captain Stan Mathews to register for the upcoming season.
+      </p>
+      <a href="mailto:chumlie@outlook.com" class="btn btn-gold">Contact Stan Mathews</a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .canam-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .schedule-list {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem 1.25rem;
+    background: var(--brown-base);
+    border: 1px solid var(--brown-light);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+  }
+
+  .schedule-item:hover {
+    transform: translateX(4px);
+  }
+
+  .schedule-item.highlight {
+    border-color: var(--gold);
+    background: rgba(201, 168, 76, 0.08);
+  }
+
+  .schedule-date {
+    font-family: var(--font-mono);
+    color: var(--gold);
+    font-size: 0.9rem;
+    min-width: 100px;
+    font-weight: 600;
+  }
+
+  .schedule-info h4 {
+    font-family: var(--font-heading);
+    color: var(--cream);
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .schedule-info p {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  .schedule-badge {
+    margin-left: auto;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .schedule-badge.completed {
+    background: rgba(93, 64, 55, 0.5);
+    color: var(--cream);
+    opacity: 0.6;
+  }
+
+  .schedule-badge.upcoming {
+    background: rgba(201, 168, 76, 0.2);
+    color: var(--gold);
+  }
+
+  .schedule-badge.home {
+    background: var(--gold);
+    color: var(--brown-darkest);
+  }
+
+  .detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .detail-item {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .detail-item strong {
+    color: var(--gold);
+    min-width: 110px;
+  }
+
+  @media (max-width: 768px) {
+    .schedule-item {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .schedule-badge {
+      margin-left: 0;
+    }
+  }
+</style>

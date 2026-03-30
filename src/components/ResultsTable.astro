@@ -1,0 +1,41 @@
+---
+interface Props {
+  dataFile: string;
+}
+
+const { dataFile } = Astro.props;
+---
+
+<div class="results-wrapper" data-file={dataFile}>
+  <p class="results-loading">Loading results...</p>
+</div>
+
+<script src="/scripts/results-table.js" defer></script>
+
+<style is:global>
+  .results-wrapper {
+    overflow-x: auto;
+  }
+
+  .results-loading {
+    text-align: center;
+    color: var(--cream);
+    opacity: 0.6;
+    padding: 2rem;
+  }
+
+  .results-wrapper table {
+    min-width: 500px;
+  }
+
+  .sort-indicator {
+    margin-left: 0.25rem;
+    font-size: 0.7rem;
+    opacity: 0.6;
+  }
+
+  .sort-indicator.active {
+    opacity: 1;
+    color: var(--gold-light);
+  }
+</style>

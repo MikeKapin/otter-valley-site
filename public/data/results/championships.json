@@ -1,0 +1,52 @@
+{
+  "year": 2025,
+  "events": [
+    {
+      "title": "Club Trap Championship 2025",
+      "date": "2025-10-19",
+      "discipline": "trap",
+      "format": "100-bird registered trap",
+      "results": [
+        {"rank": 1, "name": "Dale Kowalski",    "score": 98, "category": "AA — Champion"},
+        {"rank": 2, "name": "Rick Vandermeer",  "score": 96, "category": "AA — Runner-Up"},
+        {"rank": 3, "name": "Steve Archambault","score": 95, "category": "AA — Third"},
+        {"rank": 1, "name": "Jeff Proulx",      "score": 93, "category": "A — Champion"},
+        {"rank": 2, "name": "Barry Timmins",    "score": 91, "category": "A — Runner-Up"},
+        {"rank": 3, "name": "Walt Czerwinski",  "score": 90, "category": "A — Third"},
+        {"rank": 1, "name": "Murray Sanderson", "score": 88, "category": "B — Champion"},
+        {"rank": 2, "name": "Doug Lefebvre",    "score": 86, "category": "B — Runner-Up"},
+        {"rank": 3, "name": "Tom Wicklund",     "score": 84, "category": "B — Third"},
+        {"rank": 1, "name": "Cory Pelletier",   "score": 80, "category": "C — Champion"},
+        {"rank": 2, "name": "Frank Meszaros",   "score": 78, "category": "C — Runner-Up"},
+        {"rank": 1, "name": "Rod Blanchard",    "score": 71, "category": "D — Champion"}
+      ]
+    },
+    {
+      "title": "Club Archery Championship 2025",
+      "date": "2025-09-07",
+      "discipline": "archery",
+      "format": "3D shoot — 20 targets, unmarked distances",
+      "results": [
+        {"rank": 1, "name": "Kevin Hartwell",   "score": 312, "category": "Compound Open"},
+        {"rank": 2, "name": "Lisa Tremblay",    "score": 298, "category": "Compound Open"},
+        {"rank": 3, "name": "Brian Kowalski",   "score": 287, "category": "Compound Open"},
+        {"rank": 1, "name": "Dan Fournier",     "score": 274, "category": "Recurve"},
+        {"rank": 2, "name": "Gail Sanderson",   "score": 261, "category": "Recurve"},
+        {"rank": 1, "name": "Pat McAllister",   "score": 243, "category": "Traditional"}
+      ]
+    },
+    {
+      "title": "Handgun Silhouette Championship 2025",
+      "date": "2025-08-17",
+      "discipline": "handgun",
+      "format": "NRA Steel Silhouette — 40 shots",
+      "results": [
+        {"rank": 1, "name": "Glen Dabrowski",   "score": 37, "category": "Production"},
+        {"rank": 2, "name": "Paul Haggerty",    "score": 34, "category": "Production"},
+        {"rank": 3, "name": "Ken Strickland",   "score": 32, "category": "Production"},
+        {"rank": 1, "name": "Craig Hollenbeck", "score": 36, "category": "Open"},
+        {"rank": 2, "name": "Norm Zukowski",    "score": 33, "category": "Open"}
+      ]
+    }
+  ]
+}
