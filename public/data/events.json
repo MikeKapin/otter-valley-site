@@ -59,13 +59,21 @@
   },
   {
     "id": "8",
-    "title": "CAN-AM Trap Shoot",
-    "date": "2026-07-19",
-    "endDate": "2026-07-20",
+    "title": "CAN-AM Finale & Banquet — Otter Valley",
+    "date": "2026-05-03",
     "category": "competition",
-    "discipline": "trap",
-    "description": "The flagship event of the Otter Valley season. Two days of registered trap competition drawing shooters from across Ontario and the northeastern United States. Five-stand, 16-yard, and handicap events. On-site scoring, trophies, and awards banquet Saturday evening. Pre-registration required.",
-    "location": "Trap Fields 1–4 & Clubhouse"
+    "discipline": "sporting-clays",
+    "description": "Season finale of the CAN-AM Winter Sporting Clay League, hosted right here at Otter Valley. Awards banquet follows the shoot. Contact Stan Mathews (519-983-2620) for details.",
+    "location": "Sporting Clays Course & Clubhouse"
+  },
+  {
+    "id": "15",
+    "title": "CAN-AM Shoot #5 — Delaware Rod & Gun",
+    "date": "2026-04-12",
+    "category": "competition",
+    "discipline": "sporting-clays",
+    "description": "CAN-AM Winter Sporting Clay League Shoot #5 at Delaware Rod & Gun Club. Rescheduled from February 1. 21776 Gibson Rd, Delaware, ON.",
+    "location": "Delaware Rod & Gun Club"
   },
   {
     "id": "9",

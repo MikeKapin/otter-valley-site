@@ -14,10 +14,10 @@ import ResultsTable from '../components/ResultsTable.astro';
         <h2>About the CAN-AM</h2>
         <hr class="gold-divider" />
         <p>
-          The CAN-AM is a competitive sporting clay league featuring clubs known for their outstanding courses and skilled shooters. The league comprises six events, with one hosted at each participating club throughout the season.
+          The CAN-AM Winter Sporting Clay League is a competition between clubs that are well known for their sporting clay courses and shooters. Six events are scheduled annually, one hosted at each participating club.
         </p>
         <p>
-          If you enjoy clay target shooting, you won't want to miss this opportunity to see each club and the targets they are known for throwing. Whether you're a seasoned competitor, a hunter looking to sharpen your wing shooting, or a beginner discovering the sport — the CAN-AM welcomes you.
+          If you enjoy clay target shooting you won't want to miss this opportunity to see each club and the targets they are known for throwing. Whether you're a hunter looking to practice your wing shooting, a beginner discovering the sport, or a seasoned competitor — the CAN-AM welcomes all skill levels.
         </p>
       </div>
     </div>
@@ -32,7 +32,7 @@ import ResultsTable from '../components/ResultsTable.astro';
           <div class="schedule-date">Dec 7, 2025</div>
           <div class="schedule-info">
             <h4>Lambton Conservation Association</h4>
-            <p>Petrolia, Ontario</p>
+            <p>3451 Mandaumin Rd, Petrolia, ON N0N 1R0</p>
           </div>
           <span class="schedule-badge completed">Completed</span>
         </div>
@@ -40,23 +40,15 @@ import ResultsTable from '../components/ResultsTable.astro';
           <div class="schedule-date">Jan 4, 2026</div>
           <div class="schedule-info">
             <h4>Lambton Sportsman Club</h4>
-            <p>Sombra, Ontario</p>
-          </div>
-          <span class="schedule-badge completed">Completed</span>
-        </div>
-        <div class="schedule-item">
-          <div class="schedule-date">Feb 1, 2026</div>
-          <div class="schedule-info">
-            <h4>Delaware Rod & Gun Club</h4>
-            <p>Delaware, Ontario</p>
+            <p>521 Bickford Line, Sombra, ON N0O 2R0</p>
           </div>
           <span class="schedule-badge completed">Completed</span>
         </div>
         <div class="schedule-item">
           <div class="schedule-date">Mar 1, 2026</div>
           <div class="schedule-info">
-            <h4>TWC</h4>
-            <p>Inwood, Ontario</p>
+            <h4>TWC (Twin Creeks)</h4>
+            <p>1279 Dobbyn Rd, Inwood, ON N0P 1R0</p>
           </div>
           <span class="schedule-badge completed">Completed</span>
         </div>
@@ -64,7 +56,15 @@ import ResultsTable from '../components/ResultsTable.astro';
           <div class="schedule-date">Mar 29, 2026</div>
           <div class="schedule-info">
             <h4>Four Square Sportsman's Association</h4>
-            <p>Grant Township, Michigan</p>
+            <p>6777 Cline Rd, Grant Township, MI 48032 USA</p>
+          </div>
+          <span class="schedule-badge completed">Completed</span>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">Apr 12, 2026</div>
+          <div class="schedule-info">
+            <h4>Delaware Rod & Gun Club</h4>
+            <p>21776 Gibson Rd, Delaware, ON N0L 1E0 <em>(rescheduled from Feb 1)</em></p>
           </div>
           <span class="schedule-badge upcoming">Upcoming</span>
         </div>
@@ -72,7 +72,7 @@ import ResultsTable from '../components/ResultsTable.astro';
           <div class="schedule-date">May 3, 2026</div>
           <div class="schedule-info">
             <h4>Otter Valley Rod & Gun Club</h4>
-            <p>Straffordville, Ontario — Finale with Banquet!</p>
+            <p>9908 Plank Rd, Straffordville, ON N0J 1H0 — Finale with Banquet!</p>
           </div>
           <span class="schedule-badge home">Home Event</span>
         </div>
@@ -124,10 +124,30 @@ import ResultsTable from '../components/ResultsTable.astro';
 
   <section class="section section-dark">
     <div class="container">
-      <h2 class="text-center">Past Results</h2>
+      <h2 class="text-center">2025-26 Shoot Results</h2>
       <hr class="gold-divider" />
-      <p class="text-center" style="margin-bottom: 1.5rem; opacity: 0.8;">CAN-AM 2025 Sporting Clay Results</p>
-      <ResultsTable dataFile="/data/results/can-am-2025.json" />
+      <div class="results-recap">
+        <div class="card">
+          <h3 style="font-size: 1.1rem;">Shoot #4 — Four Square (Mar 29)</h3>
+          <p style="font-size: 0.9rem;">Our friends in Michigan had an awesome course set for us to try our skills on.</p>
+          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.1rem;">Shoot #3 — Twin Creeks (Mar 1)</h3>
+          <p style="font-size: 0.9rem;">Results from the shoot at Twin Creeks on Sunday March 1st.</p>
+          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.1rem;">Shoot #2 — Lambton Sportsman (Jan 4)</h3>
+          <p style="font-size: 0.9rem;">Results and stats from the Lambton Sportsman Club shoot.</p>
+          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.1rem;">Shoot #1 — Lambton Conservation (Dec 7)</h3>
+          <p style="font-size: 0.9rem;">Season opener at Lambton Conservation Association in Petrolia.</p>
+          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        </div>
+      </div>
     </div>
   </section>
 
