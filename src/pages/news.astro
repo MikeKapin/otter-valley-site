@@ -18,60 +18,84 @@ const newsItems = [
     title: 'CAN-AM Results from Four Square',
     category: 'CAN-AM',
     summary: 'Our friends in Michigan had an awesome course set for us to try our skills on. Results and stats from Shoot #4 at Four Square Sportsman\'s Association.',
+    links: [
+      { label: 'Results & Stats', url: '/docs/can-am/2025-26-Shoot-4-FSQ-Results-and-Stats.pdf' },
+      { label: 'Station Scores', url: '/docs/can-am/2025-26-Shoot-4-FSQ-Station-Scores.pdf' },
+    ],
   },
   {
     date: '2026-03-16',
     title: 'March 2026 Newsletter',
     category: 'Newsletter',
     summary: 'The March edition of the Otter Valley newsletter is now available.',
+    links: [],
   },
   {
     date: '2026-03-02',
     title: 'CAN-AM Shoot Results — Twin Creeks',
     category: 'CAN-AM',
     summary: 'Results from the CAN-AM shoot at Twin Creeks (TWC) on Sunday March 1st. Full results and station scores available.',
+    links: [
+      { label: 'Results & Stats', url: '/docs/can-am/25-25-Shoot-3-TWC-Results-and-Stats.pdf' },
+      { label: 'Station Scores', url: '/docs/can-am/2025-26-Shoot-3-TWC-Station-Scores.pdf' },
+    ],
   },
   {
     date: '2026-02-08',
     title: 'CAN-AM Shoot @ Delaware Has Been Rescheduled, Again',
     category: 'CAN-AM',
     summary: 'The Delaware Rod & Gun Club CAN-AM shoot has been rescheduled to April 12, 2026. This is the second reschedule — originally February 1, then February 8, now April 12.',
+    links: [
+      { label: 'CAN-AM Schedule', url: '/can-am/' },
+      { label: 'Registration Form', url: '/docs/can-am/CANAM-Sporting-Clay-Registration-24-25.pdf' },
+    ],
   },
   {
     date: '2026-01-31',
     title: 'February 8th Sporting Clays Has Been Canceled',
     category: 'Range Notice',
     summary: 'Due to weather and snow conditions, the February 8th sporting clays shoot has been canceled.',
+    links: [],
   },
   {
     date: '2026-01-28',
     title: 'Indoor Range Remains Closed Jan 28th',
     category: 'Range Notice',
     summary: 'The indoor range remains closed on January 28th due to ongoing renovations.',
+    links: [],
   },
   {
     date: '2026-01-25',
     title: 'CAN-AM Schedule Change',
     category: 'CAN-AM',
     summary: 'The CAN-AM shoot at Delaware Rod & Gun originally scheduled for February 1 has been moved to February 8.',
+    links: [
+      { label: 'View Schedule', url: '/can-am/' },
+    ],
   },
   {
     date: '2026-01-21',
     title: 'Indoor Range Closure',
     category: 'Range Notice',
     summary: 'The indoor range will be closed January 26-27 for renovations. Please plan accordingly.',
+    links: [],
   },
   {
     date: '2026-01-17',
     title: 'January 2026 Newsletter',
     category: 'Newsletter',
     summary: 'The January edition of the Otter Valley newsletter is now available with updates on the new year, CAN-AM schedule, and membership renewals.',
+    links: [],
   },
   {
     date: '2026-01-12',
     title: 'CAN-AM Results and Stats after Lambton Sportsman',
     category: 'CAN-AM',
     summary: 'Results and stats from CAN-AM Shoot #2 at Lambton Sportsman Club on January 4th.',
+    links: [
+      { label: 'Results & Stats', url: '/docs/can-am/25-26-CanAm-Shoot-2-Results-and-Stats.pdf' },
+      { label: 'Station Scores', url: '/docs/can-am/25-26-CanAm-Shoot-2-Station-Scores.pdf' },
+    ],
   },
 ];
 ---
@@ -103,6 +127,13 @@ const newsItems = [
               <span class={`news-tag tag-${item.category.toLowerCase().replace(/\s+/g, '-')}`}>{item.category}</span>
               <h3 class="news-title">{item.title}</h3>
               <p class="news-summary">{item.summary}</p>
+              {item.links && item.links.length > 0 && (
+                <div class="news-links">
+                  {item.links.map((link) => (
+                    <a href={link.url} target={link.url.endsWith('.pdf') ? '_blank' : undefined} rel={link.url.endsWith('.pdf') ? 'noopener' : undefined} class="news-link">{link.label}</a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -352,6 +383,32 @@ const newsItems = [
     opacity: 0.75;
     margin: 0;
     line-height: 1.5;
+  }
+
+  .news-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .news-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--gold-dark);
+    border-radius: 3px;
+    color: var(--gold);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .news-link:hover {
+    background: var(--gold);
+    color: var(--brown-darkest);
   }
 
   @media (max-width: 540px) {
