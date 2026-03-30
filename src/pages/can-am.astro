@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroVideo from '../components/HeroVideo.astro';
-import ResultsTable from '../components/ResultsTable.astro';
 ---
 
 <BaseLayout title="CAN-AM Sporting Clay League" description="CAN-AM Winter Sporting Clay League — six clubs across Ontario and Michigan competing in an annual series.">
@@ -127,31 +126,74 @@ import ResultsTable from '../components/ResultsTable.astro';
       <h2 class="text-center">2025-26 Shoot Results</h2>
       <hr class="gold-divider" />
       <div class="results-recap">
-        <div class="card">
-          <h3 style="font-size: 1.1rem;">Shoot #4 — Four Square (Mar 29)</h3>
-          <p style="font-size: 0.9rem;">Our friends in Michigan had an awesome course set for us to try our skills on.</p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        <div class="card result-card">
+          <h3>Shoot #4 — Four Square (Mar 29)</h3>
+          <p>Our friends in Michigan had an awesome course set for us to try our skills on.</p>
+          <div class="result-links">
+            <a href="/docs/can-am/2025-26-Shoot-4-FSQ-Results-and-Stats.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Results & Stats</a>
+            <a href="/docs/can-am/2025-26-Shoot-4-FSQ-Station-Scores.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Station Scores</a>
+          </div>
         </div>
-        <div class="card">
-          <h3 style="font-size: 1.1rem;">Shoot #3 — Twin Creeks (Mar 1)</h3>
-          <p style="font-size: 0.9rem;">Results from the shoot at Twin Creeks on Sunday March 1st.</p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        <div class="card result-card">
+          <h3>Shoot #3 — Twin Creeks (Mar 1)</h3>
+          <p>Results from the shoot at Twin Creeks on Sunday March 1st.</p>
+          <div class="result-links">
+            <a href="/docs/can-am/25-25-Shoot-3-TWC-Results-and-Stats.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Results & Stats</a>
+            <a href="/docs/can-am/2025-26-Shoot-3-TWC-Station-Scores.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Station Scores</a>
+          </div>
         </div>
-        <div class="card">
-          <h3 style="font-size: 1.1rem;">Shoot #2 — Lambton Sportsman (Jan 4)</h3>
-          <p style="font-size: 0.9rem;">Results and stats from the Lambton Sportsman Club shoot.</p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        <div class="card result-card">
+          <h3>Shoot #2 — Lambton Sportsman (Jan 4)</h3>
+          <p>Results and stats from the Lambton Sportsman Club shoot.</p>
+          <div class="result-links">
+            <a href="/docs/can-am/25-26-CanAm-Shoot-2-Results-and-Stats.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Results & Stats</a>
+            <a href="/docs/can-am/25-26-CanAm-Shoot-2-Station-Scores.pdf" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Station Scores</a>
+          </div>
         </div>
-        <div class="card">
-          <h3 style="font-size: 1.1rem;">Shoot #1 — Lambton Conservation (Dec 7)</h3>
-          <p style="font-size: 0.9rem;">Season opener at Lambton Conservation Association in Petrolia.</p>
-          <p style="font-size: 0.85rem; opacity: 0.7;">Full results and station scores available — contact Stan Mathews.</p>
+        <div class="card result-card">
+          <h3>Shoot #1 — Lambton Conservation (Dec 7)</h3>
+          <p>Season opener at Lambton Conservation Association in Petrolia.</p>
+          <p class="result-note">Results not yet available online — contact Stan Mathews.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section">
+    <div class="container">
+      <h2 class="text-center">Documents & Downloads</h2>
+      <hr class="gold-divider" />
+      <div class="docs-grid">
+        <a href="/docs/can-am/CANAM-Sporting-Clay-Registration-24-25.pdf" target="_blank" rel="noopener" class="card doc-card">
+          <span class="doc-icon">&#128196;</span>
+          <span class="doc-title">Registration Form</span>
+          <span class="doc-desc">2025-26 CAN-AM Sporting Clay Registration</span>
+        </a>
+        <a href="/docs/can-am/Can-Am-Rules.pdf" target="_blank" rel="noopener" class="card doc-card">
+          <span class="doc-icon">&#128220;</span>
+          <span class="doc-title">CAN-AM Rules</span>
+          <span class="doc-desc">Official league rules and format</span>
+        </a>
+        <a href="/docs/can-am/CANAM-2025-2026-Dates1.pdf" target="_blank" rel="noopener" class="card doc-card">
+          <span class="doc-icon">&#128197;</span>
+          <span class="doc-title">2025-26 Schedule</span>
+          <span class="doc-desc">Official dates for all six shoots</span>
+        </a>
+        <a href="/docs/can-am/Four-Square-CanAm-Invitation_2025.pdf" target="_blank" rel="noopener" class="card doc-card">
+          <span class="doc-icon">&#9993;</span>
+          <span class="doc-title">Four Square Invitation</span>
+          <span class="doc-desc">Michigan shoot details and directions</span>
+        </a>
+        <a href="https://www.atf.gov/firearms/docs/form/form-6nia-applicationpermit-temporary-importation-firearms-and-ammunition" target="_blank" rel="noopener" class="card doc-card">
+          <span class="doc-icon">&#127758;</span>
+          <span class="doc-title">ATF Form 6NIA</span>
+          <span class="doc-desc">Temporary firearms import permit (Michigan event)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
     <div class="container text-center">
       <h2>Join Team Otter Valley</h2>
       <hr class="gold-divider" />
@@ -261,6 +303,87 @@ import ResultsTable from '../components/ResultsTable.astro';
   .detail-item strong {
     color: var(--gold);
     min-width: 110px;
+  }
+
+  /* Result cards */
+  .results-recap {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .result-card h3 {
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .result-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .result-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .btn-sm {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .result-note {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  /* Document cards */
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto 0;
+  }
+
+  .doc-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    color: var(--cream);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .doc-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+    color: var(--cream);
+  }
+
+  .doc-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .doc-title {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--gold);
+  }
+
+  .doc-desc {
+    font-size: 0.78rem;
+    opacity: 0.65;
   }
 
   @media (max-width: 768px) {
