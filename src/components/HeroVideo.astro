@@ -8,11 +8,12 @@ interface Props {
 }
 
 const { videoSrc, title, tagline, compact = false, backgroundImage } = Astro.props;
+const hasVideo = !!videoSrc;
 ---
 
 <section class={`video-hero ${compact ? 'compact' : ''}`}>
   {videoSrc ? (
-    <video autoplay muted loop playsinline preload="metadata" class="hero-video">
+    <video autoplay muted playsinline preload="metadata" class="hero-video">
       <source src={videoSrc} type="video/mp4" />
     </video>
   ) : backgroundImage ? (
@@ -20,12 +21,14 @@ const { videoSrc, title, tagline, compact = false, backgroundImage } = Astro.pro
   ) : (
     <div class="video-fallback animated-bg"></div>
   )}
-  <div class="video-overlay">
-    <h1 class="hero-title">{title}</h1>
-    {tagline && <p class="hero-tagline">{tagline}</p>}
-    <hr class="gold-divider" />
-    <slot />
-  </div>
+  {!hasVideo && (
+    <div class="video-overlay">
+      <h1 class="hero-title">{title}</h1>
+      {tagline && <p class="hero-tagline">{tagline}</p>}
+      <hr class="gold-divider" />
+      <slot />
+    </div>
+  )}
   {!compact && (
     <div class="scroll-indicator">
       <span class="scroll-arrow">&#8964;</span>
