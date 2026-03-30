@@ -1,0 +1,288 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Contact the Otter Valley Rod & Gun Club — 9908 Plank Road, Straffordville, Ontario."
+>
+
+  <HeroVideo
+    title="Contact Us"
+    tagline="Get in Touch"
+    compact={true}
+  />
+
+  <!-- Contact Form + Info -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="grid-2 contact-grid">
+
+        <!-- Left: Netlify Contact Form -->
+        <div>
+          <h2>Send Us a Message</h2>
+          <hr class="gold-divider" style="margin-left: 0;" />
+          <form
+            method="POST"
+            data-netlify="true"
+            name="contact"
+            class="contact-form"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(519) 555-0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject&hellip;</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Membership">Membership</option>
+                <option value="Events">Events</option>
+                <option value="Facility Rental">Facility Rental</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="How can we help you?"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right: Contact Info Card -->
+        <div>
+          <h2>Club Information</h2>
+          <hr class="gold-divider" style="margin-left: 0;" />
+
+          <div class="card contact-info-card">
+            <div class="info-block">
+              <span class="info-icon">&#9679;</span>
+              <div>
+                <h4>Address</h4>
+                <p>
+                  9908 Plank Road<br />
+                  Straffordville, Ontario<br />
+                  <span class="info-note">Between Eden and Straffordville on Plank Road (formerly Hwy&nbsp;#19)</span>
+                </p>
+              </div>
+            </div>
+
+            <hr class="gold-divider-wide" />
+
+            <div class="info-block">
+              <span class="info-icon">&#9993;</span>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:ovrag@hotmail.com">ovrag@hotmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <hr class="gold-divider-wide" />
+
+            <div class="info-block">
+              <span class="info-icon">&#9658;</span>
+              <div>
+                <h4>Follow Us on Facebook</h4>
+                <p>
+                  <a
+                    href="https://www.facebook.com/OtterValleyRodandGunClub/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Otter Valley Rod &amp; Gun Club
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <hr class="gold-divider-wide" />
+
+            <div class="info-block">
+              <span class="info-icon">&#128336;</span>
+              <div>
+                <h4>Hours</h4>
+                <p>Ranges open — see posted schedule.<br />Clubhouse available for events.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Driving Directions -->
+          <div class="card directions-card">
+            <h4>Driving Directions</h4>
+            <p>
+              From Tillsonburg, take Highway&nbsp;19 south. The club is on the east side of Plank Road, between Eden and Straffordville.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps Embed -->
+  <section class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.5!2d-80.6!3d42.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDM3JzEyLjAiTiA4MMKwMzYnMDAuMCJX!5e0!3m2!1sen!2sca!4v1234567890"
+        width="100%"
+        height="400"
+        style="border: 0; display: block;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Otter Valley Rod &amp; Gun Club Location"
+      ></iframe>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .contact-grid {
+    align-items: start;
+    gap: 3rem;
+  }
+
+  /* Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .required {
+    color: var(--red-cta);
+    margin-left: 0.2rem;
+  }
+
+  .optional {
+    color: var(--gold-dark);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 0.3rem;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+
+  .contact-form .btn {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  /* Info Card */
+  .contact-info-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .info-block {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .info-icon {
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+    width: 1.5rem;
+    text-align: center;
+  }
+
+  .info-block h4 {
+    color: var(--gold);
+    margin-bottom: 0.2rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .info-block p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  .info-note {
+    font-size: 0.82rem;
+    color: var(--gold-dark);
+    display: block;
+    margin-top: 0.25rem;
+    font-style: italic;
+  }
+
+  .directions-card h4 {
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .directions-card p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Map */
+  .map-container {
+    width: 100%;
+    overflow: hidden;
+    border-top: 2px solid var(--brown-light);
+    border-bottom: 2px solid var(--brown-light);
+  }
+
+  @media (max-width: 767px) {
+    .contact-grid {
+      gap: 2rem;
+    }
+  }
+</style>
