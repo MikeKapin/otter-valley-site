@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroVideo from '../components/HeroVideo.astro';
-import ResultsTable from '../components/ResultsTable.astro';
 ---
 
 <BaseLayout
@@ -50,11 +49,14 @@ import ResultsTable from '../components/ResultsTable.astro';
       <h2 class="text-center">CAN-AM Results</h2>
       <hr class="gold-divider" />
       <p class="section-desc text-center">
-        Official results from the Otter Valley CAN-AM Shoot — one of Elgin County's premier
-        trap and skeet competitions, drawing competitors from across Canada and the United States.
-        Visit the <a href="/can-am">CAN-AM page</a> for event details and registration.
+        The CAN-AM Winter Sporting Clay League runs annually across six clubs in Ontario and Michigan.
+        Visit the <a href="/can-am/">CAN-AM page</a> for the current season schedule and shoot recaps.
       </p>
-      <ResultsTable dataFile="/data/results/can-am-2025.json" />
+      <div class="coming-soon-card card text-center">
+        <p class="coming-soon-icon">&#128202;</p>
+        <h3>Detailed Results Coming Soon</h3>
+        <p>Full CAN-AM shoot-by-shoot scores and standings will be posted here once available. Contact Stan Mathews (519-983-2620) for current results.</p>
+      </div>
     </div>
   </section>
 
@@ -64,10 +66,14 @@ import ResultsTable from '../components/ResultsTable.astro';
       <h2 class="text-center">Trap League Standings</h2>
       <hr class="gold-divider" />
       <p class="section-desc text-center">
-        Current season standings for the Otter Valley Wednesday Night Trap League.
-        Averages are updated after each weekly shoot. Contact the club to register for next season.
+        Otter Valley runs trap shooting throughout the season — Wednesdays at 1 PM (summer) and Sundays at noon.
+        The Southern Counties Inter-Club league runs Sundays at 10 AM during winter.
       </p>
-      <ResultsTable dataFile="/data/results/trap-league.json" />
+      <div class="coming-soon-card card text-center">
+        <p class="coming-soon-icon">&#127919;</p>
+        <h3>Standings Coming Soon</h3>
+        <p>League standings and weekly averages will be posted here as the season progresses. Contact the trap committee for current information.</p>
+      </div>
     </div>
   </section>
 
@@ -77,10 +83,13 @@ import ResultsTable from '../components/ResultsTable.astro';
       <h2 class="text-center">Club Championships</h2>
       <hr class="gold-divider" />
       <p class="section-desc text-center">
-        Annual champions across trap, sporting clays, rifle, handgun, and archery disciplines.
-        Champions are recognized at the club's year-end banquet each December.
+        Annual champions are recognized across the club's disciplines.
       </p>
-      <ResultsTable dataFile="/data/results/championships.json" />
+      <div class="coming-soon-card card text-center">
+        <p class="coming-soon-icon">&#127942;</p>
+        <h3>Championship History Coming Soon</h3>
+        <p>Past champions and annual results will be published here. 2025 Trap Champion: John Konigshofer | High 16: Keith Saunders | High Handicap: Bob Morphy.</p>
+      </div>
     </div>
   </section>
 
@@ -128,5 +137,27 @@ import ResultsTable from '../components/ResultsTable.astro';
     margin: 0 auto 2rem;
     opacity: 0.85;
     line-height: 1.7;
+  }
+
+  .coming-soon-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+  }
+
+  .coming-soon-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .coming-soon-card h3 {
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .coming-soon-card p:last-child {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin-bottom: 0;
   }
 </style>

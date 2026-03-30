@@ -10,7 +10,7 @@ import AffiliateBar from '../components/AffiliateBar.astro';
 import disciplines from '../data/disciplines.json';
 import events from '../data/events.json';
 
-const now = new Date('2026-03-30');
+const now = new Date();
 const upcoming = events
   .filter((e) => new Date(e.date) >= now)
   .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
